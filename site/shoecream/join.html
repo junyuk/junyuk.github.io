@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>회원가입</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        section{width: 600px; height: auto; margin: 0 auto; margin-top: 30px; border: 1px solid darkgray; box-sizing: border-box;
+        padding: 20px;}
+        .select{width: 150px; height: 60px;
+        margin: 0 auto}
+        
+        .select input{float: left; margin-right: 20px;}
+    </style>
+</head>
+<body>
+   <section>
+    <font size="1" color="red">*필수입력창</font><br>
+    아이디<font color="red"><sup>*</sup></font> : <input type="text" required>&nbsp;<button>아이디 중복확인</button><br>
+    <br>
+    별명<font color="red"><sup>*</sup></font> : <input type="text" required>&nbsp;<button>별명 중복확인</button><br>
+    <br>
+    비밀번호<font color="red"><sup>*</sup></font> : <input type="password" required><br>
+    <br>
+    비밀번호 재확인<font color="red"><sup>*</sup></font> : <input type="password" required><br>
+    <br>
+    이름<font color="red"><sup>*</sup></font> : <input type="text" required><br>
+    <br>
+    생년월일<font color="red"><sup>*</sup></font> : <input type="date"><br>
+    <br>
+    성별<font color="red"><sup>*</sup></font> : <select><option>남</option><option>여</option></select><br>
+    <br>
+    주소<font color="red"><sup>*</sup></font> : <input type="text" size="5" placeholder="00000">&nbsp;<input type="button" value="우편번호 검색"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" disabled>&nbsp;<input type="text" placeholder="상세주소 입력"><br>
+    <br>
+    전화번호<font color="red"><sup>*</sup></font> : <select>
+        <option>010</option>
+        <option>011</option>
+    </select>&nbsp;<input type="tel" size="4"> - <input type="tel" size="4"><br>
+    <br>
+
+    이메일<font color="red"><sup>*</sup></font> : <input type="text" required> @ <input type="text" placeholder="메일주소를 입력하세요">
+    <select>
+        <option>naver.com</option>
+        <option>nate.com</option>
+        <option>gmail.com</option>
+        <option>daum.net</option>
+    </select><br> 
+    <br>
+    신발사이즈 : 
+    <select>
+        <option>210</option>
+        <option>215</option>
+        <option>220</option>
+        <option>225</option>
+        <option>230</option>
+        <option>235</option>
+        <option>240</option>
+        <option>245</option>
+        <option selected>250</option>
+        <option>255</option>
+        <option>260</option>
+        <option>265</option>
+        <option>270</option>
+        <option>275</option>
+        <option>280</option>
+        <option>285</option>
+        <option>290</option>
+    </select>mm<br>
+    <br>
+    신장 : 
+    <select>
+        <option>120</option>
+        <option>125</option>
+        <option>130</option>
+        <option>135</option>
+        <option>140</option>
+        <option>145</option>
+        <option>150</option>
+        <option>155</option>
+        <option selected>160</option>
+        <option>165</option>
+        <option>170</option>
+        <option>175</option>
+        <option>180</option>
+        <option>185</option>
+        <option>190</option>
+        <option>195</option>
+        <option>200</option>
+    </select>cm<br>
+    <br>
+    <br>
+   <div class="select">
+    <input type="submit" value="회원가입">
+    <input type="reset" value="초기화">
+   </div>
+   </section>
+
+</body>
+</html>

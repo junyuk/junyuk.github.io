@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1.0, maximum-scale=2.0,
+     user-scalable=no">
+    <title>한국문화역사학교에 오신것을 환영합니다!</title>
+
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <!--메인 스타일 시트-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <!--폰트어썸-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--구글폰트-->
+    <LINK REL="SHORTCUT ICON" HREF="img/pavicon.ico">
+    <!--파비콘-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--스크롤시 모션 스타일 시트-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--전체 라이브러리-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 스크롤시 모션 -->
+    <script>
+        $(function(){
+            $(".top_btn").click(function(){
+                $("html, body").animate({scrollTop:0},500);
+            });//top_move
+
+            AOS.init();
+            // 스크롤 동적요소
+        });
+
+    </script>
+
+</head>
+<body  oncontextmenu="return false" 
+       ondragstart="return false" 
+       onselectstart="return false"
+>
+    
+    <input type="checkbox" id="ham_btn">
+    <div class="bar"></div>
+    <nav class="nav">
+        <div class="gnb">
+            <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg">
+            </a>
+        </div>
+        <label for="ham_btn" class="ham">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="lnb">
+            <li>정규과정
+                <div></div>
+                <ul>
+                    <li>
+                        <a href="sub/sub_index.html">
+                            교과서과정
+                        </a>
+                    </li>
+                    <li>한국사과정</li>
+                    <li>역사탐험대</li>
+                </ul>
+            </li>
+            <li>단일과정
+                <div></div>
+                <ul>
+                    <li>반일과정</li>
+                    <li>종일과정</li>
+                </ul>
+            </li>
+            <li>학교소개
+                <div></div>
+                <ul>
+                    <li>학교소개</li>
+                    <li>교사소개</li>
+                    <li>사진첩</li>
+                </ul>
+            </li>
+            <li>커뮤니티
+                <div></div>
+                <ul>
+                    <li>언론보도</li>
+                    <li>문의사항</li>
+                    <li>버스탑승장소</li>
+                    <li>상담신청</li>
+                </ul>
+            </li>
+        </ul><!--lnb-->
+    </nav>
+
+    <aside class="aside">
+        <section class="login">
+            <div class="profile">
+                <img src="img/profile01.jpg">
+            </div>
+            <div class="name">
+                <p>반갑습니다 <span>송준혁</span> 님</p>
+                <p>
+                    신청과정 확인하기 <i class="fas fa-chevron-right"></i> 
+                </p>
+            </div>
+            <div class="set">
+                <a>
+                    <i class="fas fa-cog"></i> 설정
+                </a>
+                <a>
+                    <i class="fas fa-question-circle"></i> 
+                자주 묻는 질문
+                </a>
+            </div>
+        </section><!--login-->
+        <input type="radio" name="menubtn" id="menubtn01">
+        <input type="radio" name="menubtn" id="menubtn02">
+        <input type="radio" name="menubtn" id="menubtn03">
+        <input type="radio" name="menubtn" id="menubtn04">
+        <section class="menu">
+            <div class="menu01">
+                <label for="menubtn01">
+                    정규과정 
+                </label>
+                <p>
+                    <a href="sub/sub_index.html">
+                        교과서과정
+                    </a>
+                </p>
+                <p>한국사과정</p>
+                <p>역사탐험대</p>
+            </div>
+            <div class="menu02">
+                <label for="menubtn02">
+                    단일과정 
+                </label>
+                <p>반일과정</p>
+                <p>종일과정</p>
+            </div>
+            <div class="menu03">
+                <label for="menubtn03">
+                    학교소개 
+                </label>
+                <p>학교소개</p>
+                <p>교사소개</p>
+                <p>사진첩</p>
+            </div>
+            <div class="menu04">
+                <label for="menubtn04">
+                    커뮤니티 
+                </label>
+                <p>언론보도</p>
+                <p>문의사항</p>
+                <p>버스탑승장소</p>
+                <p>상담신청</p>
+            </div>
+        </section><!--menu-->
+    </aside>
+
+    <div class="background"></div>
+
+    <section class="visual">
+        <img src="img/visual_mobile.jpg">
+        <img src="img/visual_web.jpg">
+        <ul>
+            <li>미래와 겨례를 생각하는 어린이</li>
+            <li>한국역사문화학교가 함께합니다</li>
+            <li>21년도 1학기 신입생 모집</li>
+            <li>참여하기 &nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></li>
+        </ul>
+    </section>
+
+    <section class="wrap">
+        <section class="select" 
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-mirror="true"
+        data-aos-once="true">
+            <div class="left"> 
+                <div class="title">
+                    <p></p>
+                    <p>정규과정</p>
+                    <p>자세히보기 +</p>
+                </div>
+                <div class="left_main">
+                    <ul>
+                        <li>교과서과정</li>
+                        <li>1년에 걸쳐</li>
+                        <li>각 학년에 맞는 맞춤형</li>
+                        <li>체험을 경험하는 교육</li>
+                        <li>
+                            <a href="sub/sub_index.html" target="_blank">
+                                신청하기 &nbsp; <i class="fas fa-chevron-right"></i>
+                            </a> 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>한국사과정</li>
+                        <li>1년에 걸쳐</li>
+                        <li>단계별 한국사 교육을</li>
+                        <li>듣게되는 심화교육</li>
+                        <li>
+                            신청하기 &nbsp; <i class="fas fa-chevron-right"></i> 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>역사탐험대</li>
+                        <li>방학기간내에</li>
+                        <li>국내 역사 유적지를</li>
+                        <li>공부하는 답사 프로그램</li>
+                        <li>
+                            신청하기 &nbsp; <i class="fas fa-chevron-right"></i> 
+                        </li>
+                    </ul>
+                </div>
+            </div><!--left-->
+            <div class="right">
+                <div class="title">
+                    <p></p>
+                    <p>단일과정</p>
+                    <p>자세히보기 +</p>
+                </div>
+                <div class="right_main">
+                    <ul>
+                        <li>반일과정</li>
+                        <li>1년에 걸쳐</li>
+                        <li>단계별 한국사 교육을</li>
+                        <li>듣게되는 심화교육</li>
+                        <li>
+                            신청하기 &nbsp; <i class="fas fa-chevron-right"></i> 
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>종일과정</li>
+                        <li>1년에 걸쳐</li>
+                        <li>단계별 한국사 교육을</li>
+                        <li>듣게되는 심화교육</li>
+                        <li>
+                            신청하기 &nbsp; <i class="fas fa-chevron-right"></i> 
+                        </li>
+                    </ul>
+                </div>
+            </div><!--right-->
+        </section><!--select-->
+
+        
+        <section class="class">
+            <input type="radio" name="class" id="class01">
+            <input type="radio" name="class" id="class02">
+            <input type="radio" name="class" id="class03">
+            <input type="radio" name="class" id="class04">
+            <input type="radio" name="class" id="class05">
+            <input type="radio" name="class" id="class06">
+            <section class="class01">
+                <div class="class_img">
+                    <label for="class01"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="150"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        <img src="img/class01-1.jpg">
+                    </label>
+                    <p class="img"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        <img src="img/class01.jpg">
+                    </p>
+                    <label for="class02"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="150"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        <img src="img/class01-2.jpg">
+                    </label>
+                </div>
+                <div class="class_text">
+                    <p></p>
+                    <p>한국사 개인반</p>
+                    <p>
+                        오감을 통하여 체험하는 역사 체험 학습
+                    </p> 
+                    <p>
+                        선사시대부터 현대까지의 많은 역사 유적이 숨쉬고있는 서울을 
+                    </p>
+                    <p>
+                        한달에 한번씩 문화역사학교와 함께
+                    </p>
+                    <p>
+                        2시간 30분의 역사체험을 떠나보세요
+                    </p>
+                    <p class="class_btn">
+                        신청하기 &nbsp; <i class="fas fa-chevron-right"></i> 
+                    </p>
+                </div>
+            </section><!--class01-->
+            <section class="class02">
+                <div class="class_img">
+                    <label for="class03">
+                        <img src="img/class02-1.jpg">
+                    </label>
+                    <p class="img">
+                        <img src="img/class02.jpg">
+                    </p>
+                    <label for="class04">
+                        <img src="img/class02-2.jpg">
+                    </label>
+                </div>
+                <div class="class_text">
+                    <p></p>
+                    <p>한국사 단체반</p>
+                    <p>
+                        오감을 통하여 체험하는 역사 체험 학습
+                    </p> 
+                    <p>
+                        선사시대부터 현대까지의 많은 역사 유적이 숨쉬고있는 서울을 
+                    </p>
+                    <p>
+                        한달에 한번씩 문화역사학교와 함께
+                    </p>
+                    <p>
+                        2시간 30분의 역사체험을 떠나보세요
+                    </p>
+                    <p class="class_btn">
+                        신청하기 &nbsp; <i class="fas fa-chevron-right"></i> 
+                    </p>
+                </div>
+            </section><!--class02-->
+            <section class="class03">
+                <div class="class_img">
+                    <label for="class05">
+                        <img src="img/class03-1.jpg">
+                    </label>
+                    <p class="img">
+                        <img src="img/class03.jpg">
+                    </p>
+                    <label for="class06">
+                        <img src="img/class03-2.jpg">
+                    </label>
+                </div>
+                <div class="class_text">
+                    <p></p>
+                    <p>세계사 개인반</p>
+                    <p>
+                        서울 근방에서 볼 수 있는 세계 유적들
+                    </p> 
+                    <p>
+                        대한민국에서 볼 수 있는 여러나라의 문화와 유적을 
+                    </p>
+                    <p>
+                        한달에 한번씩 문화역사학교와 함께
+                    </p>
+                    <p>
+                        2시간 30분의 역사체험을 떠나보세요
+                    </p>
+                    <p class="class_btn">
+                        신청하기 &nbsp; <i class="fas fa-chevron-right"></i> 
+                    </p>
+                </div>
+            </section><!--class03-->
+        </section><!--class-->
+
+        <section class="infomation">
+            <section class="ask"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true"
+            data-aos-once="false">
+                <div class="img">
+                    <img src="img/infomation01.jpg">
+                </div>
+                <div class="text">
+                    <p>상담문의</p>
+                    <div>
+                        <ul>
+                            <li>단체인원 상담</li>
+                            <li>(5인 이상)</li>
+                            <li>한국사, 교과서, 역사탐험대 등</li>
+                            <li>각종 커리큘럼에 있어서 더욱</li>
+                            <li>원활한 교육을 듣게 됩니다.</li>
+                            <li>상담하기</li>
+                        </ul>
+                        <ul>
+                            <li>개인인원 상담</li>
+                            <li>(4인 이하)</li>
+                            <li>여러 학생들과의 교우관계를</li>
+                            <li>향상 시켜주며 적극적인 태도로</li>
+                            <li>수업에 참여할 수 있습니다</li>
+                            <li>상담하기</li>
+                        </ul>
+                    </div>
+                </div><!--text-->
+            </section><!--ask-->
+            <section class="guide"
+            data-aos="fade-left"
+            data-aos-offset="0"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true"
+            data-aos-once="false">
+                <div class="text">
+                    <p>학교안내</p>
+                    <div>
+                        <ul>
+                            <li>학교소개</li>
+                            <li>한국문화역사학교의</li>
+                            <li>자세한 정보를</li>
+                            <li>담았습니다</li>
+                            <li>바로가기</li>
+                        </ul>
+                        <ul>
+                            <li>교사소개</li>
+                            <li>한국문화역사학교의</li>
+                            <li>든든한 교사들을</li>
+                            <li>확인해보세요</li>
+                            <li>바로가기</li>
+                        </ul>
+                        <ul>
+                            <li>버스탑승장소</li>
+                            <li>각종 현장체험 시</li>
+                            <li>타게될 버스와 장소를</li>
+                            <li>확인해보세요</li>
+                            <li>바로가기</li>
+                        </ul>
+                    </div>
+                </div><!--text-->
+                <div class="img">
+                    <img src="img/infomation02.jpg">
+                </div>
+            </section><!--guide-->
+        </section><!--infomation-->
+
+        <section class="notice">
+            <div class="notice_title">
+                <p>문화학교 이야기</p>
+                <p>더 알아보기 <i class="fas fa-chevron-right"></i></p>
+            </div>
+            <section class="notice_main">
+                <section class="review"
+                data-aos="flip-left"
+                data-aos-offset="0"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <div class="title">
+                        <p>체험후기</p>
+                        <p>+ 더보기</p>
+                    </div>
+                    <ul>
+                        <li>단양 온달 산성을 다녀와서...</li>
+                        <li>21.03.30</li>
+                    </ul>
+                    <ul>
+                        <li>잊지못할 값진 경험..</li>
+                        <li>21.02.28</li>
+                    </ul>
+                    <ul>
+                        <li>고구려 탐험!</li>
+                        <li>21.02.20</li>
+                    </ul>
+                    <ul>
+                        <li>아들이 또 가고 싶어해요</li>
+                        <li>21.02.15</li>
+                    </ul>
+                    <ul>
+                        <li>쏙쏙 박히는 쉬운 설명</li>
+                        <li>21.02.05</li>
+                    </ul>
+                    <ul>
+                        <li>서울의 역사를 한층 길게 배우고가요</li>
+                        <li>21.02.01</li>
+                    </ul>
+                    <ul>
+                        <li>교양 쌓기에 이만한것이 없네요</li>
+                        <li>21.01.30</li>
+                    </ul>
+                    <ul>
+                        <li>강화도 회군에 대하여</li>
+                        <li>21.01.20</li>
+                    </ul>
+                    <ul>
+                        <li>아이들이 참 좋아했어요</li>
+                        <li>21.01.15</li>
+                    </ul>
+                </section><!--review-->
+                <section class="preview"
+                data-aos="flip-left"
+                data-aos-offset="0"
+                data-aos-delay="200"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <div class="title">
+                        <p>학교안내문</p>
+                        <p>+ 더보기</p>
+                    </div>
+                    <ul>
+                        <li>21년 학구사 또래팀 모집</li>
+                        <li>21.03.30</li>
+                    </ul>
+                    <ul>
+                        <li>21년 학년별 교과서 또래팀 모집</li>
+                        <li>21.02.28</li>
+                    </ul>
+                    <ul>
+                        <li>20년 2학기(한국사)또래팀 모집</li>
+                        <li>21.02.20</li>
+                    </ul>
+                    <ul>
+                        <li>20년 신학기 정규과정 학생모집</li>
+                        <li>21.02.15</li>
+                    </ul>
+                    <ul>
+                        <li>겨울방학 개인 및 단체팀 모집</li>
+                        <li>21.02.05</li>
+                    </ul>
+                    <ul>
+                        <li>20년 준비 한국사 또래팀 모집</li>
+                        <li>21.02.01</li>
+                    </ul>
+                    <ul>
+                        <li>19년 2학기 한국사 단체팀 모집 중</li>
+                        <li>21.01.30</li>
+                    </ul>
+                    <ul>
+                        <li>19년 2학기 캠페인</li>
+                        <li>21.01.20</li>
+                    </ul>
+                    <ul>
+                        <li>19년 신학기 한국사 대인별 모집</li>
+                        <li>21.01.15</li>
+                    </ul>
+                </section><!--preview-->
+                <section class="question"
+                data-aos="flip-left"
+                data-aos-offset="0"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <div class="title">
+                        <p>자주묻는질문</p>
+                        <p>+ 더보기</p>
+                    </div>
+                    <ul>
+                        <li>궁금한 부분이 있어요</li>
+                        <li>21.03.30</li>
+                    </ul>
+                    <ul>
+                        <li>커리큘럼을 볼 수 있나요?</li>
+                        <li>21.02.28</li>
+                    </ul>
+                    <ul>
+                        <li>디테일하게 서울을 탐구하는</li>
+                        <li>21.02.20</li>
+                    </ul>
+                    <ul>
+                        <li>환불문의에 대하여</li>
+                        <li>21.02.15</li>
+                    </ul>
+                    <ul>
+                        <li>아이가 물어보는 부분들을</li>
+                        <li>21.02.05</li>
+                    </ul>
+                    <ul>
+                        <li>어른들도 같이 참관이 가능한지</li>
+                        <li>21.02.01</li>
+                    </ul>
+                    <ul>
+                        <li>비용에 대한 디테일을 알고 싶습니다</li>
+                        <li>21.01.30</li>
+                    </ul>
+                    <ul>
+                        <li>시험에 나오는 위주로 배우나요</li>
+                        <li>21.01.20</li>
+                    </ul>
+                    <ul>
+                        <li>가면 뭘 배우나요</li>
+                        <li>21.01.15</li>
+                    </ul>
+                </section><!--question-->
+            </section>
+        </section><!--notice-->
+
+        <footer class="footer">
+            <div class="footer_logo">
+                <a href="index.html" class="logo01">
+                    <img src="img/logo.png">
+                </a>
+                <a href="index.html" class="logo02">
+                    <img src="img/logo_footer.png">
+                </a>
+            </div>
+            <ul class="footer_list">
+                <li>이용약관</li>
+                <li>개인정보보호정책</li>
+                <li>이메일주소수집거부</li>
+                <li>환불규정</li>
+                <li>관리자에게</li>
+            </ul>
+            <ul class="footer_txt">
+                <li>1998-2021 한국역사문화학교 ALL RIGHT RESERVED</li>
+                <li>서울시 종로구 사직로 110 ㅣ TEL (02)730-4743 ㅣ FAX (02)730-4743</li>
+                <li>대표 정준영 ㅣ 사업자등록 110-90-19641 통신판매업 제 2009-서울종로-0953호</li>
+                <li>E-mail hist114@naver.com ㅣ 대표이사 정호경 ㅣ 사업자등록 101-86-70313
+                </li>
+                <li>업종 국내 외 여행 등록 (110123-123248)</li>
+            </ul>
+        </footer><!--footer-->
+    </section><!--wrap-->
+
+    <section class="tab_bar">
+        <ul class="home">
+            <a href="index.html">
+                <li><img src="img/home(off).png"></li>
+                <li>홈</li>
+            </a>
+        </ul>
+        <ul>
+            <li><i class="far fa-edit"></i></li>
+            <li>신청하기</li>
+        </ul>
+        <ul>
+            <li><i class="far fa-bell"></i></li>
+            <li>알림</li>
+        </ul>
+        <ul>
+            <li><i class="far fa-user"></i></li>
+            <li>마이페이지</li>
+        </ul>
+    </section><!--tab_bar-->
+
+    <section class="top_btn">
+        <a href="#">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </section>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK-II</title>
+
+    <script src="js/jquery-3.6.0.min.js"></script> 
+	<!--제일 위에-->
+    <script src="js/bxslider_sub.js"></script>
+	<!--bx슬라이더 서브 제이쿼리-->
+    <script src="js/banner_slider.js"></script>
+    <!--배너 슬라이더 서브 제이쿼리-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 스크롤시 모션 -->
+    <script src="js/sk2.js"></script>
+    <!--메인제이쿼리-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--구글폰트-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!--폰트어썸-->
+    <LINK REL="SHORTCUT ICON" HREF="img/favicon.ico">
+    <!--파비콘 -->
+    <link href="css/bxslider_sub.css" rel="stylesheet" />
+	<!--bx슬라이더 서브 스타일시트-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--스크롤시 모션 스타일시트-->
+    <link rel="stylesheet" href="css/sk2.css">
+    <!--메인스타일시트-->
+</head>
+<body oncontextmenu="return false" 
+ondragstart="return false" 
+onselectstart="return false"
+onload="">
+
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img src="img/logo.png">
+        </a><!--logo-->
+    </header><!--header-->
+
+    <nav class="nav_ex">
+        <nav class="nav">
+            <section class="lnb">
+                <div class="menu01">
+                    <a href="#">
+                        제품소개
+                        <p></p>
+                    </a>
+                    <div class="sheet">
+                        <ul class="menu01-1">
+                            <p>
+                                스킨케어
+                            </p>
+                            <li>
+                                <a href="#">
+                                    클렌저
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    스킨/토너
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    이센스
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    크림/로션
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    아이케어
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    UV 프로덕션
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    마스크/집중케어
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    메이크업
+                                </a>
+                            </li>
+                        </ul><!--menu01-1-->
+                        <ul class="menu01-2">
+                            <p>
+                                제품라인
+                            </p>
+                            <li>
+                                <a href="#">
+                                    피테라 에센셜
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    마스터피스 피테라
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    안티 에이징
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    화이트닝
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    LXP-럭셔리 피테라
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    SK-II MEN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    메이크업
+                                </a>
+                            </li>
+                        </ul><!--menu01-2-->
+                        <ul class="menu01-3">
+                            <p>
+                                피부고민
+                            </p>
+                            <li>
+                                <a href="#">
+                                    피부 결
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    탄력
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    주름
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    기미
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    광채
+                                </a>
+                            </li>
+                        </ul><!--menu01-3-->
+                        <ul class="menu01-4">
+                            <p>
+                                베스트셀러
+                            </p>
+                            <li>
+                                <a href="#">
+                                    베스트셀러
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    SK-II 스타터키트
+                                </a>
+                            </li>
+                        </ul><!--menu01-4-->
+                    </div><!--sheet-->
+                </div><!--menu01-->
+                <div class="menu02">
+                    <a href="#">
+                        새소식
+                        <p></p>
+                    </a>
+                    <div class="sheet">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    In the Spotlight - SK-II의 최신 소식과 신제품을 확인해 보세요
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Expertise - SK-II 제품 속에 숨겨진 피부 과학에 대해 알아보세요
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Skin Solutions - 전문가들이 전하는 스킨케어 팁을 확인해 보세요
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Must-Haves - 셀럽들과 파워블로거들이 추천하는 SK-II 제품을 확인해보세요
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--sheet-->
+                </div><!--menu02-->
+                <div class="menu03">
+                    <a href="#">
+                        브랜드 스토리
+                        <p></p>
+                    </a>
+                    <div class="sheet">
+                        <ul class="menu03-1">
+                            <p>
+                                피테라의 발견
+                            </p>
+                            <li>
+                                <a href="#">
+                                    피테라의 발견
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    특별한 성분
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    맑고 투명한 피부로의 경험
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    매직링 피부진단
+                                </a>
+                            </li>
+                        </ul><!--menu03-1-->
+                        <ul class="menu03-2">
+                            <p>
+                                아름다운 피부를 위한 과학
+                            </p>
+                            <li>
+                                <a href="#">
+                                    아키타 여성 대상 연구
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    아름다움을 위한 연구
+                                </a>
+                            </li>
+                        </ul><!--menu03-2-->
+                        <ul class="menu03-3">
+                            <p>
+                                SK-II 홍보대사
+                            </p>
+                            <li>
+                                <a href="#">
+                                    아야세 하루카
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    모모이 가오리
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    탕웨이
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    니니
+                                </a>
+                            </li>
+                        </ul><!--menu03-3-->
+                    </div><!--sheet-->
+                </div><!--menu03-->
+                <div class="menu04">
+                    <a href="#">
+                        상담
+                        <p></p>
+                    </a>
+                </div><!--menu04-->
+                <div class="menu05">
+                    <a href="#">
+                        매장안내
+                        <p></p>
+                    </a>
+                </div><!--menu04-->
+            </section><!--lnb-->
+        </nav><!--nav-->
+    </nav><!--nav_ex-->
+
+    <section class="wrap">
+
+        <section class="visual">
+            <div><img src="img/visual01.jpg"></div>
+            <div><img src="img/visual02.jpg"></div>
+            <div><img src="img/visual03.jpg"></div>
+            <div><img src="img/visual04.jpg"></div>
+        </section><!--main_visual-->
+
+
+        <div class="title">
+            <p>BEST SELLER</p>
+            <p>당신에게 선물합니다</p>
+        </div>
+        
+        <section class="section01">
+            <div class="frame">
+                <ul>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best01.jpg">
+                            </a>
+                            <a href="#">페이셸 트리트먼트 에센스</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best02.jpg">
+                            </a>
+                            <a href="#">제놉틱스 스판 에센스</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best03.jpg">
+                            </a>
+                            <a href="#">제놉틱스 극광 에센스</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best04.jpg">
+                            </a>
+                            <a href="#">R.N.A 파워 레디컬 크림</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best05.jpg">
+                            </a>
+                            <a href="#">R.N.A 파워 레디컬 뉴에이지 에센스</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best06.jpg">
+                            </a>
+                            <a href="#">R.N.A 파워 레디컬 아이크림</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best07.jpg">
+                            </a>
+                            <a href="#">페이셸 트리트먼트 마스크</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <div class="hover">
+                                    <p>DETAIL PAGE</p>
+                                    <p>자세히 보기</p>
+                                </div>
+                                <img src="img/best08.jpg">
+                            </a>
+                            <a href="#">페이셸 트리트먼트 로션</a>
+                        </div>
+                    </li>
+                </ul>
+            </div><!--frame-->
+    
+            <div class="btn">
+                <a href="#left" class="left">
+                    <img src="img/left_hover.png">
+                </a>
+                <a href="#right" class="right">
+                    <img src="img/right_hover.png">
+                </a>
+            </div><!--btn-->
+            
+        </section><!--section01-->
+
+        <div class="title">
+            <p>NEW ARRIVAL</p>
+            <p>신상품을 만나보세요</p>
+        </div>
+
+        <section class="section02">
+            <div class="new01">
+                <img src="img/new01.jpg"
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                <img src="img/new01-2.jpg"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                <div data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <p>햇볕과 자외선으로부터</p>
+                    <p>피부를 보호하세요</p>
+                </div>
+                <a href="#" data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <p>자세히 보기</p>
+                    <p></p>
+                </a>
+            </div><!--new01-->
+            <div class="new02">
+                <img src="img/new02.jpg"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                <img src="img/new02-2.jpg"
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                <img src="img/new02-3.jpg"
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                <div data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <p>더 크고 또렷해 보이는</p>
+                    <p>눈매를 위해</p>
+                </div>
+                <a href="#" data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <p>자세히 보기</p>
+                    <p></p>
+                </a>
+            </div>
+        </section><!--section02-->
+
+        <section class="section03">
+            <a href="#">
+                <img src="img/banner01.jpg">
+            </a>
+        </section><!--section03-->
+
+        <section class="section04">
+            <section class="section04_background">
+                <ul class="box"
+                data-aos="fade-down"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <li class="main_txt">
+                        <p>
+                            BRAND
+                        </p>
+                        <p>
+                            STORY
+                        </p>
+                        <p>
+                            SK-II의 이야기를
+                        </p>
+                        <p>
+                            지금 바로 확인해보세요
+                        </p>
+                        <a href="#">
+                            자세히보기 &nbsp; <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li><!--main_txt-->
+                    <li class="img">
+                        <div></div>
+                        <img src="img/info01.jpg">
+                    </li>
+                    <li class="txt">
+                        <p>
+                            In the
+                        </p>
+                        <p>
+                            Spotlight
+                        </p>
+                        <p>
+                            눈부신 변화를 위한 날개
+                        </p>
+                        <p>
+                            변화의 미학을 가장 잘 보여주는
+                        </p>
+                        <p>
+                            나비는 올해 페이셜 트리트먼트 에센스 
+                        </p>
+                        <p>
+                            리미티드 에디션 보틀 디자인의 
+                        </p>
+                        <p>
+                            영감이자 모티브입니다. 
+                        </p>
+                    </li>
+                    <li class="img">
+                        <div></div>
+                        <img src="img/info02.jpg">
+                    </li>
+                    <li class="double img">
+                        <div></div>
+                        <img src="img/info04.jpg">
+                    </li>
+                    <li class="img">
+                        <div></div>
+                        <img src="img/info03.jpg">
+                    </li>
+                    <li class="txt">
+                        <p>
+                            In the
+                        </p>
+                        <p>
+                            Spotlight
+                        </p>
+                        <p>
+                            다시 꿈을 심어주는 아이들
+                        </p>
+                        <p>
+                            전 세계 10개 도시에서 동시에 
+                        </p>
+                        <p>
+                            열리는 SK-II의 이벤트에서는 어린 
+                        </p>
+                        <p>
+                            천사들이 어른들에게 잃어버린 꿈을
+                        </p>
+                        <p>
+                            다시 심어드립니다. 
+                        </p>
+                    </li>
+                </ul><!--box-->
+            </section><!--section04_background-->
+        </section><!--section04-->
+    </section><!--wrap-->
+
+    <footer class="footer">
+        <section class="top">
+            <div>
+                <a href="#">이용약관</a> 
+                <a href="#">고객센터</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">청소년보호정책</a>
+                <p>고객상담팀 ( 051-294-2492 )</p>
+                <p>상담시간</p>
+                <p>월~금 09;00 ~ 18;00</p>
+            </div>
+        </section><!--top-->
+        <section class="bottom">
+            <a href="index.html">
+                <img src="img/footer_logo.png">
+            </a>
+            <p>한국피앤지판매유한회사 대표: 발라카 니야지</p>
+            <p>주소:서울시 영등포구 국제금융로 10, 37층</p>
+            <p>사업자 등록번호:220-86-09268 </p>
+            <p>소비자 상담실:080-023-3333</p>
+            <p>@COPYRIGHT ALL RIGHT SERVICE 2021</p>
+            <div class="sns">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
+    </footer><!--footer-->
+
+</body>
+</html>

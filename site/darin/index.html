@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1.0, maxmum-scale=2.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <LINK REL="SHORTCUT ICON" HREF="img/favicon.ico">
+    <!--파비콘 -->
+    <title>DARIN_mobile.ver</title>
+    <style>
+
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        img{display: block;}
+        a{text-decoration: none; color: black;}
+
+        body{background-image: url(img/splash.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;}
+
+        .background{width: 100%; height: 100%; position: relative; }
+
+        .splash{width: 61px; height: 61px; 
+                border-radius: 10px; overflow: hidden;
+                position: absolute; top: 29px; 
+                left: 27px; transition: all 0.5s;
+                animation: splash 1s infinite;}
+
+        @keyframes splash{
+            0%{width: 61px; height: 61px;
+                top: 29px; left: 27px;}
+            50%{width: 70px; height: 70px; 
+                top: 24.5px; left: 23.5px;}
+            100%{width: 61px; height: 61px;
+                top: 29px; left: 27px;}
+        }
+
+        .splash:hover{width: 70px; height: 70px; 
+                top: 24.5px; left: 23.5px;} 
+
+        .txt{width: 40px; height: 15px; 
+             position: absolute; top:96px; left: 37px;
+             color: white;  font-size: 10px;
+             text-align: center; line-height: 15px;} 
+
+        .splash a img{width: 100%; height: 100%;}
+
+
+    </style>
+</head>
+<body>
+
+    <section class="background">
+        <div class="splash">
+            <a href="main.html">
+                <img src="img/splash_icon.jpg">
+            </a>
+        </div>
+        <div class="txt">Darin</div>
+    </section>
+    
+</body>
+</html>

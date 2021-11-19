@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>SHOECREAM</title>
+    <link href="css/shoecream_main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <input type="checkbox" id="event_banner">
+    <section class="event_banner_box">
+        <label for="event_banner" class="event_btn">
+            <i class="fas fa-times"></i>
+        </label>
+        <div class="event">
+            <img src="img/shoecream_event.jpg">
+        </div>
+        <div class="event_banner_txt">
+            <label for="event_banner" class="event_btn">
+                오늘 하루 보지않기
+            </label>
+        </div>
+    </section>
+
+    <section class="gnb_box">
+        <ul class="gnb">
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="join.html">JOIN</a></li>
+            <li><a href="#">CART</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </section>
+
+    <section class="header">
+        <section class="logo_box">
+            <div class="logo">
+                <a href="sheocream_main.html"><img src="img/logo_03.jpg"></a>
+            </div>
+            <div class="search">
+                <input type="search" required> <i class="fas fa-search"></i>
+            </div>
+        </section>
+        
+        <section class="lnb_ex">
+            <ul class="lnb">
+                <li class="item">ITEM
+                    <input type="radio" name="item" id="men_btn" checked>
+                    <input type="radio" name="item" id="women_btn">
+                    <input type="radio" name="item" id="kid_btn">
+                    <div class="item_box">
+                        <label for="men_btn" class="men">MEN
+                            <div class="sheet men_sheet">
+                                <ul>
+                                    <div>운동화</div>
+                                    <li>캔버스화</li>
+                                    <li><a href="sub/shoecream_sub.html">스니커즈</a></li>
+                                    <li>슬립온</li>
+                                </ul>
+                                <ul>
+                                    <div>샌들</div>
+                                    <li>가죽 샌들</li>
+                                    <li>스포츠 샌들</li>
+                                    <li>스트랩 샌들</li>
+                                    <li>우븐/아쿠아</li>
+                                </ul>
+                                <ul>
+                                    <div>부츠</div>
+                                    <li>워크부츠</li>
+                                </ul>
+                                <ul>
+                                    <div>구두</div>
+                                    <li>로퍼</li>
+                                    <li>옥스포드</li>
+                                    <li>더비</li>
+                                    <li>포스트맨</li>
+                                </ul>
+                                <ul>
+                                    <div>가방</div>
+                                    <li>백팩</li>
+                                    <li>메신저백</li>
+                                    <li>토트백</li>
+                                    <li>에코백</li>
+                                    <li>힙색</li>
+                                </ul>
+                                <ul>
+                                    <div>모자</div>
+                                    <li>볼캡</li>
+                                    <li>스냅백</li>
+                                    <li>버킷햇</li>
+                                    <li>비니</li>
+                                </ul>
+                            </div><!--men_sheet-->
+                        </label>
+                        <label for="women_btn" class="women">WOMEN
+                            <div class="sheet women_sheet">
+                                <ul>
+                                    <div>운동화</div>
+                                    <li>캔버스화</li>
+                                    <li>스니커즈</li>
+                                    <li>슬립온</li>
+                                </ul>
+                                <ul>
+                                    <div>샌들</div>
+                                    <li>가죽 샌들</li>
+                                    <li>스포츠 샌들</li>
+                                    <li>스트랩 샌들</li>
+                                    <li>우븐/아쿠아</li>
+                                    <li>코르크 샌들</li>
+                                    <li>드레스 샌들</li>
+                                </ul>
+                                <ul>
+                                    <div>부츠</div>
+                                    <li>워크부츠</li>
+                                </ul>
+                                <ul>
+                                    <div>구두</div>
+                                    <li>로퍼</li>
+                                    <li>레이스업</li>
+                                    <li>힐/펌프스</li>
+                                    <li>뮬/블로퍼</li>
+                                    <li>플랫</li>
+                                    <li>토오픈/슬링백</li>
+                                </ul>
+                                <ul>
+                                    <div>가방</div>
+                                    <li>백팩</li>
+                                    <li>메신저백</li>
+                                    <li>토트백</li>
+                                    <li>에코백</li>
+                                    <li>힙색</li>
+                                </ul>
+                                <ul>
+                                    <div>모자</div>
+                                    <li>볼캡</li>
+                                    <li>스냅백</li>
+                                    <li>버킷햇</li>
+                                    <li>비니</li>
+                                </ul>
+                            </div><!--women_sheet-->
+                        </label>
+                        <label for="kid_btn" class="kid">KID
+                            <div class="sheet kid_sheet">
+                                <ul>
+                                    <div>운동화</div>
+                                    <li>캔버스화</li>
+                                    <li>스니커즈</li>
+                                    <li>슬립온</li>
+                                </ul>
+                                <ul>
+                                    <div>샌들</div>
+                                    <li>가죽 샌들</li>
+                                    <li>스포츠 샌들</li>
+                                    <li>스트랩 샌들</li>
+                                    <li>우븐/아쿠아</li>
+                                </ul>
+                                <ul>
+                                    <div>부츠</div>
+                                    <li>워크부츠</li>
+                                </ul>
+                                <ul>
+                                    <div>구두</div>
+                                    <li>로퍼</li>
+                                    <li>옥스포드</li>
+                                    <li>더비</li>
+                                    <li>포스트맨</li>
+                                </ul>
+                                <ul>
+                                    <div>가방</div>
+                                    <li>백팩</li>
+                                    <li>메신저백</li>
+                                    <li>토트백</li>
+                                    <li>에코백</li>
+                                    <li>힙색</li>
+                                </ul>
+                                <ul>
+                                    <div>모자</div>
+                                    <li>볼캡</li>
+                                    <li>스냅백</li>
+                                    <li>버킷햇</li>
+                                    <li>비니</li>
+                                </ul>
+                            </div><!--kid_sheet-->
+                        </label><!--kid-->
+                    </div><!--item_box-->
+                </li><!--item-->
+                <li>NEW</li>
+                <li>BEST</li>
+                <li>SALE</li>
+                <li>EVENT</li>
+                <li class="community">COMMUNITY
+                    <ul class="community_box">
+                        <li>REVIEW</li>
+                        <li>SNS</li>
+                        <li>REVIEW</li>
+                    </ul>
+                </li>
+            </ul><!--lnb-->
+        </section><!--lnb_ex-->
+    </section><!--header-->
+
+
+   
+    <section class="visual_ex">
+        <ul class="visual">
+            <li>
+                <img src="img/shoecream(1432x600)_01.jpg">
+            </li>
+            <li>
+                <img src="img/shoecream(1432x600)_02.jpg">
+            </li>
+            <li>
+                <img src="img/shoecream(1432x600)_03.jpg">
+            </li>
+            <li>
+                <img src="img/shoecream(1432x600)_04.jpg">
+            </li>
+            <li>
+                <img src="img/shoecream(1432x600)_01.jpg">
+            </li>
+        </ul>
+    </section><!--visual_ex-->
+
+    <section class="sale_box">
+        <ul class="txt">
+            <li></li>
+            <li>SALE</li>
+        </ul>
+        <input type="radio" name="sale" id="sale01" checked>
+        <input type="radio" name="sale" id="sale02">
+        <ul class="sale sale01">
+            <label for="sale01">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <li class="sale_img">
+                <img src="img/sale_shoe_01.jpg">
+            </li>
+            <label for="sale02">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+            <li class="sale_txt">
+                <div>줌 스피리돈 케이지 2</div>
+                <div>나이키</div>
+                <div>구 매 하 기</div>
+                <div>119,000 <span style="font-size: 15px; color: darkgray;"><del>219,000</del></span></div>
+            </li>
+        </ul>
+        <ul class="sale sale02">
+            <label for="sale01">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <li class="sale_img">
+                <img src="img/sale_shoe_02.jpg">
+            </li>
+            <label for="sale02">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+            <li class="sale_txt">
+                <div>줌 스피리돈 케이지 2</div>
+                <div>나이키</div>
+                <div>구 매 하 기</div>
+                <div>79,000 &nbsp;<span style="font-size: 15px; color: darkgray;"><del>219,000</del></span></div>
+            </li>
+        </ul>
+    </section><!--sale_box-->
+    
+    <section class="event_box">
+        <div><img src="img/event01.jpg"></div>
+        <div><img src="img/event02.jpg"></div>
+    </section><!--event_box-->
+    
+    <section class="new_box">
+        <ul class="txt">
+            <li></li>
+            <li>NEW</li>
+        </ul>
+        <input type="radio" name="new" id="new_left" checked>
+        <input type="radio" name="new" id="new_right">
+        <ul class="new new01">
+            <label for="new_left" class="new_left">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe01.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>테일윈드 79</div>
+                <div>나이키</div>
+                <div>109,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe02.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>테일윈드 79</div>
+                <div>나이키</div>
+                <div>109,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe03.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>에라</div>
+                <div>반스</div>
+                <div>49,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe04.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>에라</div>
+                <div>반스</div>
+                <div>49,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <label for="new_right" class="new_right">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </ul><!--new01-->
+        
+        <ul class="new new02">
+            <label for="new_left" class="new_left">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe05.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>덩크 로우 SP 시라큐스</div>
+                <div>나이키</div>
+                <div>219,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe07.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>카시나 덩크 로우 80's</div>
+                <div>나이키</div>
+                <div>219,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe18.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>리포스토</div>
+                <div>나이키</div>
+                <div>99,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <li>
+                <div class="new_img">
+                    <img src="img/shoe25.jpg">
+                    <div class="new_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div>코트 레거쉬</div>
+                <div>나이키</div>
+                <div>9,000<span style="font-size: 15px;">원</span></div>
+            </li>
+            <label for="new_right" class="new_right">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </ul><!--new02-->
+    </section><!--new_box-->
+
+    <section class="point_box">
+        <ul class="txt">
+            <li></li>
+            <li>POINT GUIDE</li>
+        </ul>
+        <ul class="point">
+            <li class="point01">
+                <div>
+                    <img src="img/point01.jpg">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="img/point02.jpg">
+                    <div></div>
+                </div>
+            </li>
+            <li class="point02">
+                <div>
+                    <img src="img/point03.jpg">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="img/point04.jpg">
+                    <div></div>
+                </div>
+            </li>
+        </ul><!--point-->
+    </section><!--point_box-->
+
+    <section class="sns_box">
+        <ul class="txt">
+            <li></li>
+            <li>SNS</li>
+        </ul>
+        <ul class="sns">
+            <div class="more"><a href="#">
+                + 더보기
+            </a></div>
+            <li class="sns_top">
+                <div class="sns01">
+                    <img src="img/sns01.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div class="sns02">
+                    <img src="img/sns02.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div class="sns03">
+                    <img src="img/sns03.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div class="sns04">
+                    <img src="img/sns04.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+            </li><!--sns_top-->
+            <li class="sns_bottom">
+                <div class="sns05">
+                    <img src="img/sns05.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div class="sns06">
+                    <img src="img/sns06.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div class="sns07">
+                    <img src="img/sns07.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+                <div class="sns08">
+                    <img src="img/sns08.jpg">
+                    <div class="sns_detail">
+                        <p>DETAIL PAGE</p>
+                        <p>자세히 보기</p>
+                    </div>
+                </div>
+            </li><!--sns_bottom-->
+        </ul><!--sns-->
+    </section><!--sns_box-->
+
+    <section class="notice_ex">
+        <section class="notice">
+            <p>통합고객센터</p>
+            <p>080-335-0020</p>
+            <p>월-금 09:00~12:00 / 13:00~18:00
+                (주말, 공휴일 휴무)</p>
+            <p>NOTICE</p>
+            <p><img src="img/notice01.gif"></p>
+            <p> + </p>
+        </section>
+    </section>
+    
+    <footer class="footer">
+        <ul class="footer_left">
+            <li><a href="sheocream_main.html"><img src="img/logo_04.jpg"></a></li>
+            <li>(주) 슈크림컴퍼니 대표 송준혁</li>
+            <li>주소 : 부산광역시 어이구 강호동 나가리 119-98번지 ㅣ 사업자등록번호 : 112-23-345345-2</li>
+            <li>대표전화 : 070-248-5478 ㅣ 통신판매업신고 : 통신판매업신고 광안리 제 2090-3446523</li>
+            <li>이메일 : hellojun98@naver.com ㅣ 인스타그램 : j.unyuk ㅣ 정보보호불책임자 : 삼강오륜</li>
+            <li>객원보컬 이지은 ㅣ 밴드마스터 적재 ㅣ 베이스 양경아 ㅣ 드럼 김준수 ㅣ 인증기관 그린컴퓨터아카데미</li>
+        </ul>
+        <ul class="footer_right">
+            <li>HELP
+                <p>고객센터</p>
+                <p>배송교환</p>
+                <p>매장안내</p>
+            </li>
+            <li>EVENT
+                <p>쿠폰안내</p>
+                <p>기프트카드 발급</p>
+                <p>POINT GIUDE</p>
+            </li>
+            <li class="social">
+                <div>SOCIAL</div>
+                <a href="https://www.instagram.com/j.unyuk/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.instagram.com/j.unyuk/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/j.unyuk/" target="_blank">
+                    <i class="fab fa-blogger-b"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <div class="copy">
+        copyright 2021. (주)슈크림컴퍼니 ALL RIGHTS RESERVED
+    </div>
+    
+    <aside class="wing_banner">
+        <input type="radio" name="wing" id="wing01" checked>
+        <input type="radio" name="wing" id="wing02">
+        <ul class="wing_box">
+            <li class="wing_txt">
+                <p>최근 본 상품</p>
+                <label for="wing01"> X </label>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small01.jpg"></div>
+                <p>덩크 로우 SP 시라큐스</p>
+                <p>나이키</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   219,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small03.jpg"></div>
+                <p>카시나 덩크</p>
+                <p>나이키</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   219,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small02.jpg"></div>
+                <p>척 70's 하이</p>
+                <p>컨버스</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   99,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small04.jpg"></div>
+                <p>척 70's 하이</p>
+                <p>컨버스</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   99,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+        </ul>
+        <label for="wing02" class="wing_img"></label>
+        <a href="#" class="top_btn">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </aside>
+</body>
+</html>

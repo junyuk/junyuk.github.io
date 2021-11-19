@@ -1,0 +1,413 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: black;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+body{font-family: 'Noto Sans KR', sans-serif;
+     background-color: black;
+     width: 100%; height: auto;}
+img{display: block;}
+
+/*---------------------기본세팅-----------------------*/
+
+::-webkit-scrollbar/* 스크롤바 넓이 */
+{width: 5px; height: 10px;}
+
+::-webkit-scrollbar-track /* 트랙 배경색상 */
+{background-color:black}
+
+::-webkit-scrollbar-thumb /*스크롤바 디자인*/
+{background-color:#666666; border-radius: 2px;}
+
+/* ::-webkit-scrollbar-button:start:decrement, */
+::-webkit-scrollbar-button:end:increment 
+/* 버튼 넓이 (보통 스크롤바 위드랑 같게)*/
+{width:5px;height:10px;background:#000000;} 
+
+/*---------------------스크롤바-----------------------*/
+
+.scroll_bar{width: 150px; height: 300px;
+ position: fixed; right: 20px; top: 50%;
+ margin-top: -150px;
+ box-sizing: border-box; border-right: 4px solid white;
+ color: white; font-family: 'Anton', sans-serif;
+ z-index: 3;}
+
+.scroll_bar p{margin-bottom: 35px;
+ transform: rotate(90deg); font-size: 24px;
+ margin-left: 130px; display: none;}
+
+.display{display: block;}
+
+/*---------------------스크롤바-----------------------*/
+#background {z-index: -1;}
+
+.main{width: 100%; height: 100vh; margin: 0 auto;
+      margin-bottom: 500px;}
+    
+.nav{position: fixed; top: 0;  z-index: 5;
+     width: 100%; height: 100px; transition: all 0.3s;}
+
+.nav_color{background-color: rgba(0,0,0,0.8);}
+/* 요게 스크롤시 애드클래스 되는 클래스 */
+
+.lnb_box{width: 1280px; height: 100px;  
+         box-sizing: border-box;padding: 0 15px; 
+         margin: 0 auto;}
+
+.lnb_box .logo{width: 200px; height: 100px; float: left;}
+
+.lnb_box .lnb{float: right; width: 830px; height: 100px;
+              display: flex; line-height: 100px;}
+
+.lnb_box .lnb>p{flex-grow: 1; font-size: 30px; 
+ text-align: center; font-family: 'Anton', sans-serif;}
+
+.lnb_box .lnb>p>a{color: white;}
+
+/*---------------------wrap-----------------------*/
+
+.wrap{width: 100%; height: auto; position: relative;}
+
+.top_txt{width: 1280px; height: 100px; 
+    position: absolute; top: -550px; font-size: 27px; 
+    color: white; left: 50%; margin-left: -640px;
+    font-family: 'Anton', sans-serif; z-index: 2;}
+
+.top_txt p{margin-bottom: -10px;}
+
+.flower01{position: absolute; top: -650px; left: 50%;
+          margin-left: -500px; z-index: -2;}
+
+/*---------------------section01-----------------------*/
+
+.section01_box
+{width:100%; height: auto; position: relative;
+ margin-bottom: 300px;}
+
+.section01_box .background01
+{position: absolute; right: 0; top: -100px; z-index: -1;}
+
+.section01{width: 1280px; margin: 0 auto; height: 400px;
+           position: relative; box-sizing: border-box;
+           padding: 0 60px 0 150px; margin-top: 250px;}
+
+.section01 .left{float: left; box-sizing: border-box;
+ padding-top: 120px; margin-right: 120px;}
+
+.section01 .left P{color: white;}
+
+.section01 .left P:first-child
+ {font-family: 'Anton', sans-serif; font-size: 55px;
+  margin-bottom: 0px;}
+.section01 .left p:nth-child(2),
+.section01 .left p:nth-child(3)
+{font-size: 18px; margin-bottom: 0;}
+.section01 .left p:nth-child(4)
+{width: 150px; height: 40px; box-sizing: border-box;
+ border: 1px solid white; text-align: center; 
+ line-height: 38px; margin-top: 20px;
+ cursor: pointer; transition: all 1s;}
+.section01 .left p:nth-child(4):hover 
+ {background-color: white;}
+.section01 .left p:nth-child(4) a
+ {color: white; font-size: 15px;}
+.section01 .left p:nth-child(4):hover a
+ {color: black;}
+
+
+/*---------------------section02-----------------------*/
+
+.section02_box
+{width:100%; height: 900px;
+ background-image: url(../img/background02.png); background-repeat: no-repeat; background-size: cover;
+ margin-bottom: 500px;}
+
+.section02_box .section02{width: 1280px; height: 900px;
+ margin: 0 auto; box-sizing: border-box; 
+ padding: 350px 0px 0 120px; }
+
+.section02_box .section02 .left
+ {width: 550px; height: 340px; position: relative;
+  float: left; margin-right: 50px;}
+  
+.section02_box .section02 .left p{position: absolute;}
+
+.section02_box .section02 .left p:nth-child(1)
+ {top: 0px; left: 0; z-index: 1;}
+.section02_box .section02 .left p:nth-child(2)
+ {top: 50px; left: 50px; }
+.section02_box .section02 .left p:nth-child(3)
+ {top: 200px; left: -50px; z-index: 2;}
+
+.section02_box .section02 .right
+ {height: auto;  width: auto; float: left;}
+
+.section02_box .section02 .right p{color: white;}
+.section02_box .section02 .right p:nth-child(1)
+ {font-size: 40px; font-weight: bold; margin-bottom: 10px;
+  margin-top: 230px;}
+.section02_box .section02 .right p:nth-child(2),
+.section02_box .section02 .right p:nth-child(3),
+.section02_box .section02 .right p:nth-child(4),
+.section02_box .section02 .right p:nth-child(5)
+ {font-size: 16px; font-weight: normal; margin-bottom: 0px;}
+
+/*---------------------section03-----------------------*/
+
+.section03_box
+{width:100%; height: 350px;
+ background-image: url(../img/background03.png); background-repeat: no-repeat; background-size: cover;
+ margin-bottom: 300px;}
+
+.section03_box .section03{width: 1280px; height: 350px;
+ margin: 0 auto; 
+ box-sizing: border-box; padding-left: 120px;}
+
+.section03_box .section03>.left
+ {float: left; color: white; font-size: 16px;
+ margin-right: 150px; box-sizing: border-box;
+ padding-top: 30px;}
+
+.section03_box .section03>.left p:nth-child(1)
+ {font-family: 'Anton', sans-serif; font-size: 55px; margin-bottom: 2px;}
+.section03_box .section03>.left p{margin-bottom: 0;}
+.section03_box .section03>.left p:nth-child(7)
+ {margin-top: 20px; font-size: 13px;}
+
+.section03_box .section03>.right
+{width: 400px; height: 400px; 
+ background-image: url(../img/shoe02.png); 
+ background-repeat: no-repeat; background-size: cover;
+ float: left; margin-top: -70px; position: relative;
+ cursor: pointer; transition: all 0.3s;}
+
+.section03_box .section03>.right:hover
+ {width: 410px; height: 410px; margin-left: -5px;
+  margin-top: -75px;}
+.section03_box .section03>.right:hover>li{opacity: 1;}
+
+
+.section03_box .section03>.right .point01
+ {position: absolute; top: -20px; left: -80px; 
+  color: white; width: 150px;
+  opacity: 0; transition: all 0.3s;} 
+.section03_box .section03>.right .point01 div
+ {float: left; margin-right: 10px;}
+ /* 줄이랑 동그라미 */
+.section03_box .section03>.right .point01 div p:nth-child(1)
+{width: 9px; height: 9px; background-color: white;
+  border-radius: 4.5px;}
+ /*동그라미 */
+.section03_box .section03>.right .point01 div p:nth-child(2)
+ {width: 1px; height: 90px; background-color: white; 
+  margin-left: 4px;}
+/* 줄*/
+.section03_box .section03>.right .point01 P:nth-child(2),
+.section03_box .section03>.right .point01 P:nth-child(3)
+ {font-size: 13px; margin-bottom: 3px;}
+.section03_box .section03>.right .point01 P:nth-child(2)
+ {margin-top: -5px;}
+.section03_box .section03>.right .point01 P:nth-child(4)
+ {position: absolute; top: 40px; left: -40px;}
+
+
+.section03_box .section03>.right .point02
+ {position: absolute; top: 180px; left: 50px; 
+  color: white; width: 300px; opacity: 0;
+  transition: all 0.3s;}
+.section03_box .section03>.right .point02 div
+{float: left; margin-right: 10px; margin-bottom: 50px;}
+.section03_box .section03>.right .point02>p
+ {font-size: 13px; margin-bottom: 3px;}
+.section03_box .section03>.right .point02 div p:nth-child(1)
+{width: 1px; height: 250px; background-color: white; 
+ margin-left: 4px;}
+.section03_box .section03>.right .point02 div p:nth-child(2)
+{width: 9px; height: 9px; background-color: white;
+ border-radius: 4.5px;}
+.section03_box .section03>.right .point02>p:nth-child(2)
+ {margin-top: 250px;}
+
+
+.section03_box .section03>.right .point03
+ {position: absolute; top: 130px; right: -70px; 
+  color: white; opacity: 0; transition: all 0.3s;}
+.section03_box .section03>.right .point03>p:nth-child(1)
+ {position: absolute; top: 0; left: -170px;}
+.section03_box .section03>.right .point03 div
+ {margin-top: 100px; width: 100%; float: left; margin-bottom: 5px;}
+.section03_box .section03>.right .point03 div p:nth-child(1)
+ {width: 150px; height: 1px; background-color: white;
+  float: left;}
+.section03_box .section03>.right .point03 div p:nth-child(2)
+{width: 9px; height: 9px; background-color: white;
+ border-radius: 4.5px; float: left; margin-top: -4px;}
+.section03_box .section03>.right .point03 p:nth-child(3),
+.section03_box .section03>.right .point03 p:nth-child(4)
+ {margin-left: 30px; font-size: 13px;}
+
+/*---------------------section04-----------------------*/
+
+.section04_box{width: 1280px; height: 900px; 
+ background-image: url(../img/background04.png);
+ background-repeat: no-repeat; 
+ background-position: center; margin: 0 auto;
+ background-size: auto; margin-bottom: 500px;}
+
+.section04_box .section04{width: 1280px; height: auto;
+ margin: 0 auto; position: relative; 
+ box-sizing: border-box; padding-top: 250px;}
+
+.section04_box .section04 .flower_400
+ {position: absolute; top: 0; left :-200px;}
+.section04_box .section04 .flower_150
+ {position: absolute; top: 750px; left : 200px;}
+.section04_box .section04 .flower_650
+ {position: absolute; top: 300px; right : -300px;}
+
+.section04_box .section04 .draw
+ {width: 500px; height: 600px; margin: 0 auto; 
+  color: white; text-align: center; font-size: 18px;
+  margin-bottom: 90px;}
+
+.section04_box .section04 .draw li p{margin-bottom: 0;}
+
+.section04_box .section04 .draw li:first-child
+ {margin-bottom: 70px;}
+.section04_box .section04 .draw li:first-child p:first-child
+ {font-family: 'Anton', sans-serif; font-size: 50px;}
+.section04_box .section04 .draw li:first-child p:nth-child(2)
+ {font-size: 20px; font-weight: bold;}
+
+.section04_box .section04 .draw li:nth-child(2)
+ {margin-bottom: 30px;}
+.section04_box .section04 .draw li:nth-child(2) p:nth-child(1)
+ {color: #eb9d31; font-size: 20px; font-weight: bold;}
+
+.section04_box .section04 .draw li:nth-child(3)
+ {margin-bottom: 30px;}
+.section04_box .section04 .draw li:nth-child(3) p:nth-child(1)
+ {color: #eb9d31; font-size: 20px; font-weight: bold;}
+
+.section04_box .section04 .draw li:nth-child(4)
+ {margin-bottom: 60px;}
+.section04_box .section04 .draw li:nth-child(4) p:nth-child(1)
+ {color: #eb9d31; font-size: 20px; font-weight: bold;}
+
+.section04_box .section04 .draw li:nth-child(5)
+ {width: 150px; height: 40px; box-sizing: border-box;
+  border: 1px solid #eb9d31; line-height: 38px;
+  margin: 0 auto; transition: all 0.3s;}
+.section04_box .section04 .draw li:nth-child(5):hover
+ {background-color: #eb9d31;}
+.section04_box .section04 .draw li:nth-child(5) p
+ {color: #eb9d31; font-size: 15px;}
+.section04_box .section04 .draw li:nth-child(5):hover p 
+ {color: black; font-weight: bold;}
+
+
+.section04_box .section04 .attention
+ {width: 900px; height: 95px; box-sizing: border-box;
+  border-left: 1px solid #eb9d31; margin: 0 auto;
+  box-sizing: border-box; padding-left: 15px; 
+  color: #eb9d31; font-size: 13px;}
+.section04_box .section04 .attention p
+ {margin-bottom: 8px;}
+
+/*---------------------section05-----------------------*/
+
+.section05_box
+{width: 100%; height: 830px; 
+ background-image: url(../img/background05.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;}
+
+.section05_box .section05{width: 1280px; height: 830px;
+ margin: 0 auto; background-color: rgba(0,0,0,0.8);
+ text-align: center; color: white; box-sizing: border-box;
+ padding-top: 40px; font-size: 15px;}
+
+.section05_box .section05 .txt{margin-bottom: 40px;}
+
+.section05_box .section05 .txt p{margin-bottom: 0;}
+
+.section05_box .section05 .txt p:nth-child(1)
+ {font-family: 'Anton', sans-serif; font-size: 30px;
+  margin-bottom: 30px;}
+
+.section05_box .section05 .txt p:nth-child(3)
+ {margin-bottom: 20px;}
+
+.section05_box .section05 .img
+ {width: 1040px; height: 530px; margin: 0 auto;}
+
+.section05_box .section05 .img .left 
+ {width: 515px; height: 530px; margin-right: 10px;
+  float: left;}
+
+.section05_box .section05 .img a
+ {display: block;}
+ 
+.section05_box .section05 .img .left a:nth-child(1)
+ {width: 305px; height: 200px; margin-right: 10px;
+  float: left;}
+
+.section05_box .section05 .img .left a:nth-child(2)
+ {width: 200px; height: 200px; float: left;}
+
+.section05_box .section05 .img .left a:nth-child(3)
+ {width: 515px; height: 320px; margin-top: 10px;
+  float: left;}
+
+.section05_box .section05 .img .right 
+ {width: 515px; height: 530px; float: left;}
+
+.section05_box .section05 .img .right a:nth-child(1)
+ {width: 200px; height: 530px; margin-right: 10px;
+  float: left;}
+.section05_box .section05 .img .right a:nth-child(2)
+ {width: 305px; height: 200px; float: left; 
+  margin-bottom: 10px;}
+
+.section05_box .section05 .img .right a:nth-child(3)
+ {width: 305px; height: 320px; float: left;}
+
+
+/*---------------------info-----------------------*/
+
+.infomation_ex{width: 100%; height: 70px; background-color: black;}
+
+.infomation{width: 1280px; margin: 0 auto; line-height: 70px; box-sizing: border-box; padding: 0 120px;}
+
+.infomation .txt{float: left;}
+
+.infomation .txt a
+{color: white; margin-right: 70px; font-size: 15px;
+ font-weight: bold;}
+
+.infomation .sns{float: right;}
+
+.infomation .sns a{color: white; margin-left: 20px;
+ font-size: 20px;}
+
+/*---------------------footer-----------------------*/
+
+.footer_ex{width: 100%; height: 210px; 
+           background-color: white;}
+
+.footer{width: 1280px; margin: 0 auto; 
+  box-sizing: border-box; padding: 0 120px;}
+
+.footer .logo02
+{width: 200px; height: 100px; margin-left: -40px;}
+
+.footer p{margin-bottom: 2px; font-size: 12px;}
+
+/*---------------------copyright-----------------------*/
+
+.copyright_ex{width: 100%; height: 40px; background-color: #f0f0f0;}
+
+.copyright{width: 1280px; margin: 0 auto; 
+           line-height: 40px; font-size: 12px;
+           box-sizing: border-box; 
+           padding: 0 120px;}

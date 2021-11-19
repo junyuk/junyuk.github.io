@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1.0, maxmum-scale=2.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <LINK REL="SHORTCUT ICON" HREF="img/favicon.ico">
+    <!--파비콘 -->
+    <title>DARIN_mobile.ver</title>
+    <style>
+
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        img{display: block;}
+        a{text-decoration: none; color: black;}
+
+        body{overflow: hidden;}
+
+        .visual{width: 100%;}
+
+        .visual_land{width: 100%; display: none;}
+
+        .visual .nomal img{width: 100%; height: 100%;}
+
+        
+
+        @media only screen and (min-width:321px) and (orientation : landscape)
+        { .nomal{display: none;} 
+          .visual_land{display: block; width: 100%;}
+          .landscape img{width: 100%; height: 100%;}
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="visual">
+        <a href="sub02.html" class="nomal"><img src="img/visual.jpg"></a>
+    </section>
+
+    <section class="visual_land">
+        <a href="sub02.html" class="landscape"><img src="img/visual02.jpg"></a>
+    </section>
+
+
+    
+</body>
+</html>

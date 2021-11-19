@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+     minmum-scale=1.0, maxmum-scale=2.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <LINK REL="SHORTCUT ICON" HREF="img/favicon.ico">
+    <!--파비콘 -->
+
+    <title>DARIN</title>
+    <style>
+
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        img{display: block;}
+        a{text-decoration: none; color: white;}
+        .wrap{overflow: hidden;}
+
+        /*-------------------스크롤바-------------------*/
+
+        ::-webkit-scrollbar/* 스크롤바 넓이 */
+        {width: 2px; height: 5px;}
+
+        ::-webkit-scrollbar-track /* 트랙 배경색상 */
+        {background-color:#182025;}
+
+        ::-webkit-scrollbar-thumb /*스크롤바 디자인*/
+        {background-color:#28353d; border-radius: 2px;}
+
+        /*-------------------time_bar-------------------*/
+
+        .time_bar{width: 100%; height: 20px; color: rgb(255, 255, 255); 
+         overflow: hidden; box-sizing: border-box; padding: 0 1%;
+         position: fixed; top: 0; z-index: 3;}
+
+        .time_bar li{float: left; line-height: 20px;}
+
+        .time_bar li:nth-child(1){width: 30%;}
+        .time_bar li:nth-child(2){width: 40%; text-align: center;}
+        .time_bar li:nth-child(3)
+         {width: 30%; text-align: right; font-size: 10px;}
+
+        .time_bar li i{font-size: 12px;}
+
+        .time_bar li:nth-child(1) i{font-size: 14px;}
+
+        .time_bar li:nth-child(3) i:nth-child(1),
+        .time_bar li:nth-child(3) i:nth-child(2)
+        {color: #cfcfcf;}
+        .time_bar li:nth-child(3) i:nth-child(3)
+        {font-size: 14px;}
+
+        /*-------------------------header-------------------------*/
+
+        #ham_btn, #remove{display: none;}
+        #ham_btn:checked ~ .main_box .main
+        {opacity: 0.2; left: 50%;}
+        #remove:checked ~ .main_box .main
+        {opacity: 1; left: 0;}
+ 
+        .hidden{width: 50%; height: 100%; 
+                background-color: #182025; 
+                overflow: hidden; text-align: center; 
+                box-sizing: border-box; padding-top: 30%;
+                padding-bottom: 90%; position: fixed;}
+
+        .hidden div{margin-bottom: 20%; font-size: 17px;}
+
+        .hidden div a{font-family: 'Krona One', sans-serif;}
+        .hidden div:nth-child(1) a {color: darkgray;}
+
+        .main{width: 100%; overflow: hidden; position: absolute; top: 0; left: 0; transition: all 0.3s;}
+
+        .header{width: 100%; height: 50px; 
+                overflow: hidden; position: fixed;
+                background-color: #28353d; color: #ccc;
+                line-height: 50px; padding-top: 20px;}
+
+        .main_btn
+        {font-size: 16px; width: 50px; height: 50px;
+         text-align: center; float: left; cursor: pointer;}
+
+        .header .title{font-size: 20px; float: left; 
+         width: calc(100% - 100px); text-align: center;
+         font-family: 'Krona One', sans-serif;}
+
+        .header .blank
+        {width: 50px; height: 50px; float: left;}
+
+        .header .landscape_header
+        {display: none; width: 100%; font-size: 15px;
+            font-family: 'Krona One', sans-serif;}
+
+        .header .landscape_header li
+        {float: left; width: 25%; text-align: center;}
+
+        .header .landscape_header li:first-child a{color:rgb(150, 150, 150) ;}
+
+        
+        
+        .introduce{width: 100%; overflow: hidden; height: auto;
+         background-color: #111a20; box-sizing: border-box;
+         padding: 3%; padding-top: 10%; margin-top: 50px;}
+
+        .introduce .darin{width: 100%; overflow: hidden;
+         margin-bottom: 20%;}
+
+        .introduce .darin li
+        {float: left; width: 47%; color: white; 
+         font-size: 10px; text-align: left;}
+
+        .introduce .darin li:first-child{margin-right: 6%;}
+
+        .introduce .darin li:first-child img
+        {width: 100%; height: 100%;}
+
+        .introduce .darin .text
+        {box-sizing: border-box; padding-top: 3%;}
+
+        .introduce .darin .text p{margin-bottom: 2px;
+         font-family: 'Nanum Myeongjo', serif;}
+        .introduce .darin .text p:nth-child(1)
+        {font-size: 10px; text-align: center;
+         margin-bottom: 10%;}
+
+        .introduce .darin .text p:nth-child(10)
+        {margin-bottom: 10%;}
+
+
+        .introduce .darin_sns_box
+        {width: 100%; background-color: #111a20;   
+         box-sizing: border-box; padding-bottom: 40%;}
+
+        .introduce .darin_sns_box .darin_sns
+        {width: 50%; margin: 0 auto;}
+
+        .introduce .darin_sns_box .darin_sns li
+        {float: left; color: white; font-size: 30px;
+         margin-right: 23%;}
+
+        .introduce .darin_sns_box .darin_sns li a:hover
+         {color: darkgray;}
+
+        .introduce .darin_sns_box .darin_sns li a:checked
+        {color: darkgray;}
+
+        .introduce .darin_sns_box .darin_sns li:nth-child(3){margin-right: 0;}
+
+        .introduce .bottom{width: 100%; text-align: center;
+         color: white; background-color: #111a20;
+         font-family: 'Nanum Myeongjo', serif;
+         box-sizing: border-box; padding-bottom: 40%;}
+
+        @media only screen and (min-width: 321px) and 
+         (orientation: landscape){
+             .hidden{display: none;}
+             .header .nomal_header{display: none;}
+             .header .landscape_header{display: block;}
+             .introduce{box-sizing: border-box;
+                        padding-top: 7%;}
+             .introduce .darin
+             {width: 60%; float: left; overflow: hidden;
+              height: 100%;}
+             .introduce .darin_sns_box
+             {width: 40%; float: left; overflow: hidden;
+              padding-left: 10%; box-sizing: border-box;
+              padding-bottom: 10%; height: 100%s;}
+             .introduce .darin_sns_box .darin_sns
+             {width: 80%; box-sizing: border-box; 
+              padding-top: 40%; text-align: center;
+              box-sizing: border-box; padding-bottom: 10%;}
+             .introduce .darin_sns_box .darin_sns li
+             {margin-right: 17%;}
+             
+             .introduce .bottom
+             {width: 35%; overflow: hidden;
+              box-sizing: border-box; margin-left: 67%;
+              }
+
+
+             }
+    </style>
+</head>
+<body  oncontextmenu="return false" 
+ondragstart="return false" 
+onselectstart="return false">
+
+    <section class="wrap">
+        <ul class="time_bar">
+            <li>
+                <i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i>
+                KT
+                <i class="fas fa-wifi"></i>
+            </li>
+            <li> 16:18 </li>
+            <li>
+                <i class="fas fa-moon"></i>
+                <i class="fab fa-bluetooth-b"></i>
+                50%
+                <i class="fas fa-battery-half"></i>
+            </li>
+        </ul><!--time_bar-->
+
+        <input type="radio" name="tab" id="ham_btn">
+        <input type="radio" name="tab" id="remove" checked>
+        <label for="remove" class="main_box">
+            <section class="hidden">
+                <div><a href="sub02.html">Darin</a></div>
+                <div><a href="sub03.html">PROFILE</a></div>
+                <div><a href="sub04.html">ALBUM</a></div>
+                <div><a href="sub05.html">PICTURE</a></div>
+            </section>
+            <section class="main">
+                <header class="header">
+                    <ul class="nomal_header">
+                        <label for="ham_btn" class="main_btn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <li class="title">Darin</li>
+                        <li class="blank"></li>
+                    </ul>
+                    <ul class="landscape_header">
+                        <li><a href="sub02.html">Darin</a></li>
+                        <li><a href="sub03.html">PROFILE</a></li>
+                        <li><a href="sub04.html">CAREER</a></li>
+                        <li><a href="sub05.html">PICTURE</a></li>
+                    </ul>
+                </header>
+    
+                <section class="introduce">
+                    <ul class="darin">
+                        <li><img src="img/darin01.jpg"></li>
+                        <li class="text">
+                            <p>"이야기는 화가의 방에서 출발합니다"</p>
+                            <p> 다린의 목소리에는 풍경이 담겨 있다.</p>
+                            <p> 다린의 노래를 듣고 있으면, 그녀가 </p>
+                            <p> 음악을 통해 우리에게 들려주려는 </p>
+                            <p>이야기가 그림처럼 눈앞에 펼쳐진다.</p>
+                            <p>그 풍경화는 매우 다채로워서 다린이 </p>
+                            <p>한 음 또 한 음마다 세공한 감정의 결이</p>
+                            <p> 점묘화인 듯, 음과 음 사이의 깊은</p>
+                            <p>숨소리를 들을 때면 세밀화인 듯</p>
+                            <p>여겨지기도한다.</p>
+                            <p>지난 여름, 두 편의 서사로 나뉜 [숲]이 시작되었다. Part.1이 이야기하던 ‘저마다의 숲'을 지나 
+    
+                                마침내 완결된 [숲]으로 돌아온 그녀는 한결 다정하게 ‘우리'라는 은은한 확신에 대해 이야기하고자 한다.</p>
+                        </li>
+                    </ul>
+                    <div class="darin_sns_box">
+                        <ul class="darin_sns">
+                            <li><a href="https://www.instagram.com/da112rin/" target="blank">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                            <li><a href="https://www.youtube.com/channel/UCloST3eAtVcyYYEYy-uqmpA" target="blank">
+                                <i class="fab fa-youtube"></i>
+                            </a></li>
+                            <li><a href="https://www.da112rin.net/" target="blank">
+                                <i class="fas fa-home"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">Acoustie Music</div>
+                </section>
+            </section>
+        </label>
+    </section>
+
+
+    
+</body>
+</html>

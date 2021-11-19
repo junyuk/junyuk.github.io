@@ -1,0 +1,361 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: black;}
+li{list-style: none;}
+body{font-family: 'Noto Sans KR', sans-serif;
+     background-color: #fcfaf7;
+     }
+
+::-webkit-scrollbar/* 스크롤바 넓이 */
+{width: 10px; height: 100px;}
+
+::-webkit-scrollbar-track /* 트랙 배경색상 */
+{background-color:#fcfaf7;}
+
+::-webkit-scrollbar-thumb /*스크롤바 디자인*/
+{background-color:#6c6154; border-radius: 1px;}
+
+/* ::-webkit-scrollbar-thumb:hover
+{background: #555;} */
+/* 마우스를 올렸을때 */
+
+/* ::-webkit-scrollbar-button:start:decrement, */
+::-webkit-scrollbar-button:end:increment 
+/* 버튼 넓이 (보통 스크롤바 위드랑 같게)*/
+{width:16px;height:16px;background:#6c6154;} 
+
+img{border:none 0; vertical-align:top;}
+
+::selection { 
+      /* 드래그 컬러변경 */
+      background-color: #6c6154;
+			color: white;}
+
+.top{width: 40px; height: 40px; 
+     border: 2px solid #6c6154; color: #6c6154;
+     text-align: center; line-height: 48px; 
+     font-size: 22px; position: fixed; right: 30px; 
+     bottom: 10%; cursor: pointer; border-radius: 20px;
+     transition: all 0.3s; display: none;}
+
+.top:hover{background-color: #6c6154; color: white;}
+
+/*--------------------header-----------------------*/
+
+.header_ex{width: 100%; height: 100px; 
+           background-color: #6c6154; 
+           position: fixed; top: 0;
+           z-index: 2;}
+
+.header{width: 1032px; margin: 0 auto;}
+
+.header .gnb{height: 20px;}
+
+.header .gnb ul{float: right; display: flex;}
+
+.header .gnb ul li{font-size: 12px; margin-right: 20px;}
+
+.header .gnb ul li:last-child{margin-right: 10px;}
+
+.header .gnb ul li a{color: white;}
+
+.header .lnb_box{height: 80px;
+ padding-left: 49.5px;
+ box-sizing: border-box;
+ position: relative;}
+
+.header .lnb_box .logo
+{width: 150px; height: 40px; margin-right: 52.5px;
+ margin-top: 20px; float: left;}
+
+.header .lnb_box .lnb>li{float: left; width: 156px; 
+ text-align: center; padding-bottom: 20px;
+ font-size: 18px; font-weight: 500; margin-top: 28px;
+ }
+
+.header .lnb_box .lnb>li>a{color: white;}
+
+.header .lnb_box .lnb>li>ul{height: 0px; width: 156px;
+ background-color: rgba(255, 255, 255,0.9); 
+ position: absolute; top: 80px; left: 0;
+ box-sizing: border-box; transition: all 0.3s;
+ overflow: hidden;}
+
+.header .lnb_box .lnb:hover ul
+{height: 180px; padding-top: 15px;}
+
+.header .lnb_box .lnb>li.m1>ul:nth-child(2)
+{width: 252px; padding-top: 0;}
+.header .lnb_box .lnb>li.m1>ul:nth-child(3){left: 252px;}
+.header .lnb_box .lnb>li.m2>ul{left: 408px;}
+.header .lnb_box .lnb>li.m3>ul{left: 564px;}
+.header .lnb_box .lnb>li.m4>ul{left: 720px;}
+.header .lnb_box .lnb>li.m5>ul{left: 876px;}
+
+.header .lnb_box .lnb>li>ul>li{margin-bottom: 20px;
+ font-size: 15px; font-weight: normal;}
+
+.header .lnb_box .lnb>li>ul>li:hover>a
+{color: coral; display: block;}
+
+/*-------------------------visual--------------------*/
+
+.visual_box{width: 1032px; height: 400px; 
+ position: relative; margin: 0 auto; margin-top: 100px;
+ margin-bottom: 110px;}
+
+/*--------------------wrap----------------------*/
+
+.wrap{width: 1032px; margin: 0 auto; 
+      position: relative; height: auto;
+     }
+
+/*--------------------brand_intro--------------------*/
+
+.brand_introduce{width: 100%; height: 350px; 
+ margin-bottom: 150px;}
+
+.brand_introduce .title{width: 100%; height: 40px;
+ text-align: center; font-size: 20px; 
+ font-weight: bold; line-height: 40px;}
+
+.brand_introduce .brand_main
+{height: 310px; position: relative;}
+
+.brand_introduce .brand_main .brand_img
+{width: 771px; height: 310px; overflow: hidden;
+ border-radius: 0 155px 155px 0; 
+ box-shadow: 10px 10px 10px rgba(0,0,0,0.09);}
+
+.brand_introduce .brand_main .brand_txt
+ {position: absolute; top: 50%; right: 80px; margin-top: -40px;}
+
+.brand_introduce .brand_main .brand_txt p:nth-child(1)
+ {font-size: 15px; color: #3c3732; margin-bottom: 0px;}
+.brand_introduce .brand_main .brand_txt p:nth-child(2)
+ {font-size: 30px; color: #3c3732; margin-bottom: 5px;
+  font-weight: 700; margin-bottom: 15px;}
+.brand_introduce .brand_main .brand_txt p:nth-child(2) span
+{font-weight: normal;}
+.brand_introduce .brand_main .brand_txt p:nth-child(3)
+ {width: 150px; height: 35px; font-weight: bold;
+  border: 1px solid #3c3732; font-size: 15px;
+  text-align: center; line-height: 35px; 
+  box-sizing: border-box; transition: all 0.5s;
+  cursor: pointer;
+}
+.brand_introduce .brand_main .brand_txt p:nth-child(3):hover
+{background-color: rgba(60, 55, 50,0.9);}
+.brand_introduce .brand_main .brand_txt p:nth-child(3):hover a{color: white;}
+
+
+/*--------------------side_noodle--------------------*/
+
+.side_noodle{position: absolute; right: 0; top: 460px;
+             width: 310px; height: 310px;}
+
+/*--------------------noodle--------------------*/
+
+#noodle_frame
+{position:relative; width:684px; margin: 50px auto;}
+
+#prevBtn
+{position:absolute;left:-50px;top:50%; margin-top: -15px;}
+#nextBtn
+{position:absolute;right:-50px;top:50%; margin-top: -15px;}
+
+.content{margin-bottom: 150px;}
+
+.title{width: 100%; height: 40px;
+     text-align: center; font-size: 20px; 
+     font-weight: bold; line-height: 40px;
+     margin-bottom: 30px;}
+
+.noodle_box
+{width: 684px; height: 400px; margin: 0 auto;
+ position: relative;}
+
+.noodle_frame{width: 684px; height: 400px; 
+ overflow: hidden; position: relative;
+ box-shadow: 10px 10px 10px rgba(0,0,0,0.09);}
+
+.noodle{width: 1368px; position: absolute; top: 0;
+ left: 0;}
+
+.noodle>ul
+{width: 684px; height: 400px; float: left;
+ box-sizing: border-box; padding: 5px;}
+
+.noodle .noodle01
+{background-image: url(../img/noodle01.jpg);}
+.noodle .noodle02
+{background-image: url(../img/noodle02.jpg);}
+
+.noodle>ul .noodle_left
+{width: 331px; height: 390px; box-sizing: border-box;
+ border: 3px solid white; float: left; 
+ margin-right: 12px;}
+
+.noodle>ul .noodle_right{
+ width: 330px; height: 390px;
+ background-color: white; float: left; 
+ padding-top: 90px; padding-left: 50px;
+ box-sizing: border-box;}
+
+.noodle>ul .noodle_right p:nth-child(1)
+ {font-size: 30px; font-weight: bold;} 
+.noodle>ul .noodle_right p:nth-child(2)
+ {font-size: 12px; font-weight: normal; 
+ margin-bottom: 40px;}
+.noodle>ul .noodle_right p:nth-child(3),
+.noodle>ul .noodle_right p:nth-child(4),
+.noodle>ul .noodle_right p:nth-child(5)
+ {font-size: 15px; font-weight: normal;
+  margin-bottom: 3px;}
+.noodle>ul .noodle_right p:nth-child(6)
+ {font-size: 15px; font-weight: bolder;
+  margin-top: 20px;}
+.noodle>ul .noodle_right p:nth-child(6):hover
+ {font-size: 17px;}
+
+
+.noodle_box>p>a{opacity: 0.5; transition: all 0.3s;}
+
+.noodle_box>p>a:hover{opacity: 1;}
+
+          
+/*--------------------subscribe--------------------*/
+
+.subscribe_box{width: 1032px; height: 350px;
+ margin: 0 auto; background-image: url(../img/subscribe.jpg); box-shadow: 5px 5px 10px rgba(0,0,0,0.2);}
+
+.subscribe{background-color: rgba(0, 0, 0, 0.6);
+width: 1032px; height: 350px; text-align: center;
+box-sizing: border-box; padding-top: 50px;}
+
+.subscribe>div>p{color: rgba(255, 255, 255,1);}
+
+.subscribe>div>p:nth-child(1)
+ {font-size: 12px; margin-bottom: 10px;}
+.subscribe>div>p:nth-child(2)
+ {font-size: 34px; font-weight: bold; margin-bottom: 50px;}
+.subscribe>div>p:nth-child(3),
+.subscribe>div>p:nth-child(4),
+.subscribe>div>p:nth-child(5),
+.subscribe>div>p:nth-child(6)
+ {font-size: 14px;}
+
+.subscribe>div>p:nth-child(7)
+{margin: 0 auto; margin-top: 20px; width: 125px;
+ height: 30px; box-sizing: border-box; transition: all 0.3s;
+ border: 1px solid white; line-height: 28px; cursor: pointer;}
+
+.subscribe>div>p:nth-child(7):hover
+{background-color: white;}
+.subscribe>div>p:nth-child(7)>a{color: white}
+.subscribe>div>p:nth-child(7):hover>a{color: black;}
+
+/*--------------------information--------------------*/
+
+.information_box{width: 684px; height: 300px;
+ margin: 0 auto;}
+
+.information_box>ul
+{float: left; width: 208px; height: 340px; margin-right: 30px; text-align: center; position: relative;}
+.information_box>ul:last-child{margin-right: 0;}
+
+.information_box .information{width: 208px; height: 208px;
+ border-radius: 104px; position: absolute;
+ box-shadow: 1px 1px 10px rgba(0,0,0,0.3); top: 0; 
+ left: 0; transition: all 0.3s; overflow: hidden;}
+
+.information_box>ul:hover .information{top: -10px;}
+
+.information_box .info01 .information
+ {background-image: url(../img/information01.jpg);
+  background-size: auto;}
+.information_box .info02 .information
+ {background-image: url(../img/information02.jpg);}
+.information_box .info03 .information
+ {background-image: url(../img/information03.jpg);}
+
+.information_box .information div,
+.information_box .information div p a
+{color: white;}
+
+.information_box .information div
+ {background-color: rgba(0, 0, 0, 0.4);
+  width: 208px; height: 208px; box-sizing: border-box; padding-top: 70px; transition: all 0.3s; opacity: 0;
+  cursor: pointer;}
+
+.information_box .info02 .information div,
+.information_box .info03 .information div
+ {padding-top: 56px;}
+  
+.information_box>ul:hover .information div{opacity: 1;}
+/* info박스에 마우스 올릴시 이미지영역 투명도 1로 하겠다 */
+
+.information_box .information div p:nth-child(1),
+.information_box .information div p:nth-child(2)
+ {font-size: 12px;}
+
+.information_box .information div p:nth-child(3)
+ {margin-top: 20px;}
+.information_box .information div p:nth-child(3) a
+ {font-weight: bold; font-size: 16px;}
+
+
+.information_box .info_txt
+{margin-top: 228px; cursor: pointer;}
+.information_box .info_txt p:nth-child(1)
+ {font-weight: 500; margin-bottom: 10px;}
+.information_box .info_txt p:nth-child(2),
+.information_box .info_txt p:nth-child(3)
+ {font-size: 13px;}
+
+ /*--------------------footer--------------------*/
+
+.footer_ex{width: 100%; height: 130px; 
+            background-color: #6c6154;}
+
+.footer{width: 1032px; height: 130px; margin: 0 auto;
+ box-sizing: border-box; padding: 30px 20px;}
+
+.footer .logo
+{width: 150px; height: 40px; margin-left: 30px;
+ float: left; margin-top: 5px;}
+
+.footer ul{float: right; color: white; 
+           text-align: right;}
+
+.footer ul li{font-size: 12px;}
+
+.footer ul .help{margin-bottom: 10px;}
+
+.footer ul .help p{display: inline; margin-right: 15px;
+ box-sizing: border-box;
+ padding-right: 15px;}
+
+.footer ul .help p:last-child
+{border-right: none; margin: 0; padding: 0;}
+
+.footer ul .help p a{color: white; font-size: 14px;
+ font-weight: 500;}
+
+
+
+  
+
+
+
+
+
+
+             
+
+
+
+
+
+
+
+

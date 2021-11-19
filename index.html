@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>송준혁의 포트폴리오</title>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--전체 라이브러리-->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- 퍼블리싱 섹션 박스 슬라이드 제이쿼리 자동셋팅-->
+    <script src="js/jquery.easypiechart.js"></script>
+    <!--그래프 제이쿼리-->
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <!--마우스휠 라이브러리-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--스크롤시 섹션 동작 구현-->
+    <script src="js/popup_slider.js"></script> 
+    <!--스토리 팝업 제이쿼리-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+     <!-- <script src="js/ekko-lightbox.min.js"></script> -->
+    <!--이미지 모달-->
+    <script>
+        function art01(){//내가만든거
+            window.open("./site/darin/index.html","art01","top=300,left=450,width=370,height=600, resizable=no,location=yes");
+            //art01는 별칭 
+            //사이즈 조절 못하게
+            //로케이션 경로설정을 없애기
+            //크롬은 지원을 안해줌
+            //자바스크립트 윈도우 객체가 오픈된다//
+            //f12를 안누르게하려고
+            //ex.모바일
+        }
+        function shoecream(){//내가만든거
+            window.open("./site/shoecream_mobile/index.html","art01","top=300,left=450,width=375,height=650, resizable=no,location=yes");
+            //art01는 별칭 
+            //사이즈 조절 못하게
+            //로케이션 경로설정을 없애기
+            //크롬은 지원을 안해줌
+            //자바스크립트 윈도우 객체가 오픈된다//
+            //f12를 안누르게하려고
+            //ex.모바일
+        }
+    </script>
+    <!--모바일 버전 팝업창-->
+    <script src="js/portpolio.js"></script>
+    <!--메인 제이쿼리-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--구글폰트-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!--폰트어썸-->
+    <LINK REL="SHORTCUT ICON" HREF="img/favicon.ico">
+    <!--파비콘 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ekko-lightbox.css">
+    <!--이미지 모달 스타일시트-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--스크롤시 모션 스타일시트-->
+    <link rel="stylesheet" href="css/portpolio.css">
+    <!--메인스타일시트-->
+
+
+
+</head>
+<body oncontextmenu="return false" 
+      ondragstart="return false" 
+      onselectstart="return false"
+      onload="">
+
+    <nav class="nav">
+        <nav class="lnb_box">
+            <div class="logo">
+                <img src="img/logo_intro.png">
+            </div><!--logo-->
+            <div class="lnb">
+                <p>
+                    <a href="#" id="about" class="menu">
+                      about
+                    </a>
+                </p>
+                <p>
+                    <a href="#" id="site" class="menu">
+                      site
+                    </a>
+                </p>
+                <p>
+                    <a href="#" id="works" class="menu">
+                      works
+                    </a>
+                </p>
+                <p>
+                    <a href="#" id="story" class="menu">
+                      story
+                    </a>
+                </p>
+                <p>
+                    <a href="#" id="contect" class="menu">
+                      contect
+                    </a>
+                </p>
+            </div><!--lnb-->
+        </nav><!--lnb_box-->
+    </nav><!--nav-->
+
+    <section class="section01_box full" >
+        <section class="section01">
+            <ul>
+                <li class="txt">
+                    <p data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        PORTPOLIO
+                    </p>
+                    <p data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-delay="150"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        2021
+                    </p>
+                </li>
+                <li class="line">
+                    <img src="img/main01.png">
+                </li>
+                <li class="scroll">
+                    <p>SCROLL</p>
+                    <div>
+                        <p></p>
+                    </div>
+                </li>
+            </ul>
+        </section><!--section01-->
+    </section><!--section01_box-->
+    <!--인트로 페이지는 lnb가 없어서 밖으로 빼둠-->
+
+    <section class="wrap">
+
+        <section class="section02_box full n">
+            <section class="section02">
+                <ul data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <li>
+                        끊임없이 도전하여 진화하는 퍼블리셔 <span>송준혁</span> 입니다.
+                    </li>
+                    <li>
+                        <p class="name"> 
+                            profile
+                        </p>
+                        <p>송준혁 / Song Jun Hyuk</p>
+                        <p>1998.12.11</p>
+                        <p>010.7900.8226</p>
+                    </li>
+                    <li>
+                        <p class="name"> 
+                            education
+                        </p>
+                        <p>2020.12 ~ 2021.05</p>
+                        <p>그린컴퓨터아트학원 - 반응형 웹 디자인 & 웹 퍼블리셔 수료</p>
+                    </li>
+                    <li>
+                        <p class="name"> 
+                            certificate
+                        </p>
+                        <p>2016.08</p>
+                        <p>GTQ(그래픽기술사격)1급 - 한국생산성본부</p>
+                    </li>
+                    <li>
+                        <p class="name">
+                            skill
+                        </p>
+                        <div class="chart chart1" data-percent="95">
+                            <span class="title">HTML</span>
+                        </div>
+                        <div class="chart chart2" data-percent="95">
+                            <span class="title">CSS</span>
+                        </div>
+                        <div class="chart chart3" data-percent="70">
+                            <span class="title">JS</span>
+                        </div>
+                        <div class="chart chart4" data-percent="90">
+                            <span class="title">Ps</span>
+                        </div>
+                        <div class="chart chart5" data-percent="85">
+                            <span class="title">Ai</span>
+                        </div>
+                    </li><!--원형그래프-->
+                </ul><!--left-->
+                <div class="right"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <img src="img/visual_main.jpg">
+                </div><!--right-->
+            </section><!--section02-->
+        </section><!--section02_box-->
+
+        <section class="section03_box full n">
+            <section class="section03">
+                <div class="title"
+                data-aos="fade-down"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <p>Web Publishing</p>
+                    <p>웹 퍼블리싱</p>
+                </div><!--title-->
+                <section id="section03_frame">
+                    <div id="publishing"> 
+                        <ul class="pub01">
+                            <li>
+                                <div>
+                                    <p>제일제면소</p>
+                                    <p>cheiljemyunso</p>
+                                    <p>제작물</p>
+                                    <p>메인페이지 [적응형]</p>
+                                    <p>제작기간</p>
+                                    <p>3일</p>
+                                    <p>사용툴</p>
+                                    <p>HTML, CSS, jQuery</p>
+                                    <p>
+                                        <a href="./site/noodles/index.html" target="_blank">
+                                            publishing
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="https://www.cheiljemyunso.co.kr:7014/main.asp" target="_blank">
+                                            original
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="pub02">
+                            <li>
+                                <div>
+                                    <p>슈크림</p>
+                                    <p>shoecream</p>
+                                    <p>제작물</p>
+                                    <p>메인, 서브페이지 [브랜딩]</p>
+                                    <p>제작기간</p>
+                                    <p>7일</p>
+                                    <p>사용툴</p>
+                                    <p>HTML, CSS, jQuery</p>
+                                    <p>
+                                        <a href="./site/shoecream/index.html" target="_blank">
+                                            web
+                                        </a>
+                                    </p>
+                                    <button onclick="shoecream()">
+                                        mobile
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="pub03">
+                            <li>
+                                <div>
+                                    <p>한국역사문화학교</p>
+                                    <p>koreaschool</p>
+                                    <p>제작물</p>
+                                    <p>메인페이지 [반응형]</p>
+                                    <p>제작기간</p>
+                                    <p>3일</p>
+                                    <p>사용툴</p>
+                                    <p>HTML, CSS, jQuery</p>
+                                    <p>
+                                        <a href="./site/koreaschool/index.html" target="_blank">
+                                            Responsive
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.koreaschool.co.kr/" target="_blank">
+                                            original
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="pub04">
+                            <li>
+                                <div>
+                                    <p>SK-II</p>
+                                    <p>cosmetics site</p>
+                                    <p>제작물</p>
+                                    <p>메인페이지</p>
+                                    <p>제작기간</p>
+                                    <p>3일</p>
+                                    <p>사용툴</p>
+                                    <p>HTML, CSS, jQuery</p>
+                                    <p>
+                                        <a href="./site/sk-ii/index.html" target="_blank">
+                                            publishing
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="https://www.sk2.co.kr/kr/index.aspx" target="_blank">
+                                            original
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="pub05">
+                            <li>
+                                <div>
+                                    <p>나이키</p>
+                                    <p>paranoise</p>
+                                    <p>제작물</p>
+                                    <p>메인페이지 [적응형 프로모션]</p>
+                                    <p>제작기간</p>
+                                    <p>3일</p>
+                                    <p>사용툴</p>
+                                    <p>HTML, CSS, jQuery</p>
+                                    <p>
+                                        <a href="./site/paranoise/index.html" target="_blank">
+                                            promotion
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="https://www.nike.com/kr/ko_kr/c/nsw/af1_para-noise_utopia" target="_blank">
+                                            original
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>        
+                    </div><!--publishing-->
+                    <p>
+                        <a href="#" id="prevBtn">
+                           <img src="img/prev_btn.png" alt="이전버튼" />
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#" id="nextBtn">
+                           <img src="img/next_btn.png" alt="다음버튼" />
+                        </a>
+                    </p>
+                </section><!--banner-->
+            </section><!--section03-->
+        </section><!--section03_box-->
+
+        <section class="section04_box full n">
+            <section class="section04">
+                <div class="title"
+                data-aos="fade-down"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <p>Art Works</p>
+                    <p>작업물</p>
+                </div><!--title-->
+                <ul class="artwork">
+                    <li 
+                    data-aos="fade-down"
+                    data-aos-offset="0"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    >
+                        <div>
+                            <p>UI / UX design</p>
+                            <p>꾸다</p>
+                            <a class="main_a" href="./site/dream/index.html" target="_blank">
+                                바로가기 &nbsp;
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li
+                    data-aos="fade-down"
+                    data-aos-offset="0"
+                    data-aos-delay="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        <div>
+                            <p>PhotoShop design</p>
+                            <p>포토샵 디자인</p>
+                            <a class="main_a" href="img/photoshop01.jpg" data-toggle="photoshop"
+                            data-gallery="photoshop"
+                            data-footer="NIKE [Advertising banner]"data-max-width="700">바로가기 &nbsp;
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a href="img/photoshop02.jpg"data-toggle="photoshop"
+                            data-gallery="photoshop"
+                            data-footer="NIKE [Advertising banner]"
+                            ></a>
+                            <a href="img/photoshop06.jpg"data-toggle="photoshop"
+                            data-gallery="photoshop"
+                            data-footer="new blance [Advertising banner]"
+                            ></a>
+                            <a href="img/photoshop03.jpg"data-toggle="photoshop"
+                            data-gallery="photoshop"data-footer="제일제면소 [Advertising banner]"></a>
+                            <a href="img/photoshop04.jpg"data-toggle="photoshop"
+                            data-gallery="photoshop"
+                            data-footer="제일제면소 [Advertising banner]"></a>
+                            <a href="img/photoshop05.jpg"data-toggle="photoshop"
+                            data-gallery="photoshop"
+                            data-footer=" 슈크림 [Advertising line banner]"></a>
+                        </div>
+                    </li>
+                    <li
+                    data-aos="fade-down"
+                    data-aos-offset="0"
+                    data-aos-delay="300"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        <div>
+                            <p>Mobile publishing</p>
+                            <p>다린</p>
+                            <button class="main_a"  onclick="art01()">바로가기 &nbsp;
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li
+                    data-aos="fade-down"
+                    data-aos-offset="0"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        <div>
+                            <p>Illustrator design</p>
+                            <p>일러스트 디자인</p>
+                            <a class="main_a" href="img/illrustrator01.jpg" data-toggle="illustrator"
+                            data-gallery="illrustrator" data-footer="instagram BI [3D design]"
+                            data-max-width="700"
+                            >바로가기 &nbsp;
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a href="img/illrustrator04.jpg" data-toggle="illustrator"
+                            data-gallery="illrustrator" data-footer=" 그린컴퓨터아트학원 BI[redesign]"></a>
+                            <a href="img/illrustrator02.jpg" data-toggle="illustrator"
+                            data-gallery="illrustrator" data-footer="NEW CAFE [branding]"></a>
+                            <a href="img/illrustrator03.jpg" data-toggle="illustrator"
+                            data-gallery="illrustrator" data-footer="올바른 손씻기 [Public Interest Poster]"></a>
+                        </div>
+                    </li>
+                    <li
+                    data-aos="fade-down"
+                    data-aos-offset="0"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                        <div>
+                            <p>Photography</p>
+                            <p>사진</p>
+                            <a class="main_a" href="img/photography01.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2019.06 광안리- [Iphone8]"
+                            data-max-width="700">바로가기 &nbsp;
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a href="img/photography02.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2016.01 제주- [Iphone6]"></a>
+                            <a href="img/photography03.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2017.02 뉴욕- [Iphone7]"></a>
+                            <a href="img/photography04.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2017.02 뉴욕- [Iphone7]"></a>
+                            <a href="img/photography05.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2017.02 뉴욕- [Iphone7]"></a>
+                            <a href="img/photography06.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2020.01 다대포- [Iphone6]"></a>
+                            <a href="img/photography07.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2016.01 평창- [Iphone6]"></a>
+                            <a href="img/photography08.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2016.03 부산- [Iphone6]"></a>
+                            <a href="img/photography09.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2017.02 뉴욕- [Iphone7]"></a>
+                            <a href="img/photography10.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2016.08 홍콩- [Iphone6]"></a>
+                            <a href="img/photography11.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2017.02 뉴욕- [Iphone7]"></a>
+                            <a href="img/photography12.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2017.01 순천- [Iphone7]"></a>
+                            <a href="img/photography13.jpg" data-toggle="photography"
+                            data-gallery="photography" data-footer="2020.10 제주- [Iphone11pro]"></a>
+                        </div>
+                    </li>
+                </ul><!--artwork-->
+                <div class="line">
+                    <img src="img/artwork_background.png">
+                </div>
+            </section><!--section04-->
+        </section><!--section04_box-->
+        
+        <section class="section05_box full n">
+            <section class="section05">
+                <div class="title">
+                    <p>Story</p>
+                    <p>나의 이야기</p>
+                </div><!--title-->
+                <div class="story">
+                    <div class="frame">
+                        <ul>
+                            <li>
+                                <a>
+                                    <img src="img/story01.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="img/story02.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="img/story03.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="img/story04.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="img/story05.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="img/story06.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="img/story07.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--frame-->
+                    <div class="list_num">
+                        <a href="#"
+                        data-aos="flip-left"
+                        data-aos-offset="0"
+                        data-aos-delay="500"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-sine"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <img src="img/off_01.png">
+                        </a>
+                        <a href="#"
+                        data-aos="flip-left"
+                        data-aos-offset="0"
+                        data-aos-delay="600"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-sine"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <img src="img/off_02.png">
+                        </a>
+                        <a href="#"
+                        data-aos="flip-left"
+                        data-aos-offset="0"
+                        data-aos-delay="700"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-sine"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <img src="img/off_03.png">
+                        </a>
+                        <a href="#"
+                        data-aos="flip-left"
+                        data-aos-offset="0"
+                        data-aos-delay="800"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-sine"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <img src="img/off_04.png">
+                        </a>
+                        <a href="#"
+                        data-aos="flip-left"
+                        data-aos-offset="0"
+                        data-aos-delay="900"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-sine"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <img src="img/off_05.png">
+                        </a>
+                        <a href="#"
+                        data-aos="flip-left"
+                        data-aos-offset="0"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-sine"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <img src="img/off_06.png">
+                        </a>
+                        <a href="#"
+                        data-aos="flip-left"
+                        data-aos-offset="0"
+                        data-aos-delay="1100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-sine"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <img src="img/off_07.png">
+                        </a>
+                    </div><!--list_num-->
+                </div><!--story-->
+                <div class="txt txt01"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <div>
+                        <p>기록하다</p>
+                        <p></p>
+                    </div>
+                    <p>
+                        매 순간순간 떠오르는 생각과 감정을 놓치지 않고자
+                    </p>
+                    <p>
+                        노트, 휴대폰 메모 또는 촬영을 이용해 기록하는 습관이 있습니다.
+                    </p>
+                    <p>
+                        이 습관이 순간순간의 창의적인 발상들을 
+                    </p>
+                    <p>
+                        더욱 더 원활하게 할 수 있게 만들었습니다.
+                    </p>
+                </div><!--txt-->
+                <div class="txt txt02"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <div>
+                        <p>여행하다</p>
+                        <p></p>
+                    </div>
+                    <p>여러 경험을 하며 보고 느낀 것을 바탕으로
+                    </p>
+                    <p>자기발전하는것을 중요하게 생각합니다.</p>
+                    <p>
+                        틈 나는대로 국내외를 가리지 않고 
+                    </p>
+                    <p> 
+                        새로운 장소를 발견하는것에 
+                        흥미를 가지고 있습니다.
+                    </p>
+                    <p>
+                        여행을 통해 여러 경험들을 해온 사람들과 소통할 수 있었고</p>
+                    <p>스스로를 돌아보고 치유하는 능력을 가지게 되었습니다.</p>
+                </div><!--txt-->
+                <div class="txt txt03"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-sine"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <div>
+                        <p>소통하다</p>
+                        <p></p>
+                    </div>
+                    <p>
+                        중학생시절 집에 있는 기타를 
+                        튕겨보며 처음으로
+                    </p>
+                    <p>
+                        음악에 대해 흥미를 가지게 되었습니다.
+                    </p>
+                    <p>
+                        가끔 버스킹을 하며 지나가던 사람들이 음악에 반응해
+                    </p>
+                    <p>
+                        잠시 머무르다 가는 모습을 보면
+                        이루 말할 수 없는 
+                    </p>
+                    <p>
+                        묘한 행복을 느끼곤 합니다.
+                    </p>
+                </div><!--txt-->
+            </section><!--section05-->
+        </section><!--section05_box-->
+
+        <section class="section06_box full n">
+            <section class="section06">
+                <P class="title">
+                    Thank you for watching
+                </P>
+                <ul>
+                    <li>
+                        <p></p>
+                        <p>hellojun98@naver.com</p>
+                        <p></p>
+                    </li>
+                    <li class="second">
+                        <p></p>
+                        <p>010.7900.8226</p>
+                        <p></p>
+                    </li>
+                </ul>
+            </section><!--section06-->
+        </section><!--section06_box-->
+        
+    </wrap><!--wrap-->
+ 
+</body>
+</html>

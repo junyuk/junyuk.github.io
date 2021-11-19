@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, minimum=0.6, maximum=2.0, user-scalable=no">
+    <title>SHOECREAM</title>
+    <link href="css/shoecream_detail.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <LINK REL="SHORTCUT ICON" HREF="img/favicon.ico">
+    <!--파비콘 -->
+</head>
+<body oncontextmenu="return false" 
+ondragstart="return false" 
+onselectstart="return false">
+
+    <section class="gnb_box">
+        <ul class="gnb">
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="../join.html" target="_blank">JOIN</a></li>
+            <li><a href="#">CART</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </section>
+
+    <section class="header">
+        <section class="logo_box">
+            <div class="logo">
+                <a href="../index.html"><img src="img/logo_03.jpg"></a>
+            </div>
+            <div class="search">
+                <input type="search" required> <i class="fas fa-search"></i>
+            </div>
+        </section>
+        
+        <section class="lnb_ex">
+            <ul class="lnb">
+                <li class="item">ITEM
+                    <input type="radio" name="item" id="men_btn" checked>
+                    <input type="radio" name="item" id="women_btn">
+                    <input type="radio" name="item" id="kid_btn">
+                    <div class="item_box">
+                        <label for="men_btn" class="men">MEN
+                            <div class="sheet men_sheet">
+                                <ul>
+                                    <div>운동화</div>
+                                    <li>캔버스화</li>
+                                    <li><a href="../sub/shoecream_sub.html">스니커즈</a></li>
+                                    <li>슬립온</li>
+                                </ul>
+                                <ul>
+                                    <div>샌들</div>
+                                    <li>가죽 샌들</li>
+                                    <li>스포츠 샌들</li>
+                                    <li>스트랩 샌들</li>
+                                    <li>우븐/아쿠아</li>
+                                </ul>
+                                <ul>
+                                    <div>부츠</div>
+                                    <li>워크부츠</li>
+                                </ul>
+                                <ul>
+                                    <div>구두</div>
+                                    <li>로퍼</li>
+                                    <li>옥스포드</li>
+                                    <li>더비</li>
+                                    <li>포스트맨</li>
+                                </ul>
+                                <ul>
+                                    <div>가방</div>
+                                    <li>백팩</li>
+                                    <li>메신저백</li>
+                                    <li>토트백</li>
+                                    <li>에코백</li>
+                                    <li>힙색</li>
+                                </ul>
+                                <ul>
+                                    <div>모자</div>
+                                    <li>볼캡</li>
+                                    <li>스냅백</li>
+                                    <li>버킷햇</li>
+                                    <li>비니</li>
+                                </ul>
+                            </div><!--men_sheet-->
+                        </label>
+                        <label for="women_btn" class="women">WOMEN
+                            <div class="sheet women_sheet">
+                                <ul>
+                                    <div>운동화</div>
+                                    <li>캔버스화</li>
+                                    <li>스니커즈</li>
+                                    <li>슬립온</li>
+                                </ul>
+                                <ul>
+                                    <div>샌들</div>
+                                    <li>가죽 샌들</li>
+                                    <li>스포츠 샌들</li>
+                                    <li>스트랩 샌들</li>
+                                    <li>코르크 샌들</li>
+                                    <li>드레스 샌들</li>
+                                </ul>
+                                <ul>
+                                    <div>부츠</div>
+                                    <li>워크부츠</li>
+                                </ul>
+                                <ul>
+                                    <div>구두</div>
+                                    <li>로퍼</li>
+                                    <li>레이스업</li>
+                                    <li>힐/펌프스</li>
+                                    <li>뮬/블로퍼</li>
+                                    <li>플랫</li>
+                                </ul>
+                                <ul>
+                                    <div>가방</div>
+                                    <li>백팩</li>
+                                    <li>메신저백</li>
+                                    <li>토트백</li>
+                                    <li>에코백</li>
+                                    <li>힙색</li>
+                                </ul>
+                                <ul>
+                                    <div>모자</div>
+                                    <li>볼캡</li>
+                                    <li>스냅백</li>
+                                    <li>버킷햇</li>
+                                    <li>비니</li>
+                                </ul>
+                            </div><!--women_sheet-->
+                        </label>
+                        <label for="kid_btn" class="kid">KID
+                            <div class="sheet kid_sheet">
+                                <ul>
+                                    <div>운동화</div>
+                                    <li>캔버스화</li>
+                                    <li>스니커즈</li>
+                                    <li>슬립온</li>
+                                </ul>
+                                <ul>
+                                    <div>샌들</div>
+                                    <li>가죽 샌들</li>
+                                    <li>스포츠 샌들</li>
+                                    <li>스트랩 샌들</li>
+                                    <li>우븐/아쿠아</li>
+                                </ul>
+                                <ul>
+                                    <div>부츠</div>
+                                    <li>워크부츠</li>
+                                </ul>
+                                <ul>
+                                    <div>구두</div>
+                                    <li>로퍼</li>
+                                    <li>옥스포드</li>
+                                    <li>더비</li>
+                                    <li>포스트맨</li>
+                                </ul>
+                                <ul>
+                                    <div>가방</div>
+                                    <li>백팩</li>
+                                    <li>메신저백</li>
+                                    <li>토트백</li>
+                                    <li>에코백</li>
+                                    <li>힙색</li>
+                                </ul>
+                                <ul>
+                                    <div>모자</div>
+                                    <li>볼캡</li>
+                                    <li>스냅백</li>
+                                    <li>버킷햇</li>
+                                    <li>비니</li>
+                                </ul>
+                            </div><!--kid_sheet-->
+                        </label><!--kid-->
+                    </div><!--item_box-->
+                </li><!--item-->
+                <li>NEW</li>
+                <li>BEST</li>
+                <li>SALE</li>
+                <li>EVENT</li>
+                <li class="community">COMMUNITY
+                    <ul class="community_box">
+                        <li>REVIEW</li>
+                        <li>SNS</li>
+                        <li>QnA</li>
+                    </ul>
+                </li>
+            </ul><!--lnb-->
+        </section><!--lnb_ex-->
+    </section><!--header-->
+
+    <section class="wrap">
+        <ul class="sub_lnb_box">
+            <li>
+                <a href="../index.html">HOME</a>
+            </li>
+            <li>
+                <i class="fas fa-chevron-right"></i>
+            </li>
+            <li class="sub_gender">
+                <div class="sub_group">
+                    <p>MEN</p>
+                    <i class="fas fa-sort-down"></i>
+                    <div class="sub_item_list">
+                        <p><a href="../sub/shoecream_sub.html">MEN</a></p>
+                        <p>WOMEN</p>
+                        <p>KID</p>
+                    </div><!--sub_item_list-->
+                </div><!--sub_group-->
+            </li><!--sub_gender-->
+            <li><i class="fas fa-chevron-right"></i></li>
+            <li class="sub_item">
+                <div class="sub_group"> 
+                    <p>운동화</p>
+                    <i class="fas fa-sort-down"></i>
+                    <div class="sub_item_list">
+                        <p><a href="../sub/shoecream_sub.html">운동화</a></p>
+                        <p>샌들</p>
+                        <p>부츠</p>
+                        <p>구두</p>
+                        <p>가방</p>
+                        <p>모자</p>
+                    </div><!--sub_item_list-->
+                </div><!--sub_group-->
+            </li><!--sub_item-->
+            <li><i class="fas fa-chevron-right"></i></li>
+            <li class="sub_sneakers">
+                <div class="sub_group">
+                    <p>스니커즈</p>
+                    <i class="fas fa-sort-down"></i>
+                    <div class="sub_item_list">
+                        <p><a href="../sub/shoecream_sub.html">스니커즈</a></p>
+                        <p>캔버스화</p>
+                        <p>슬립온</p>
+                    </div><!--sub_item_list-->
+                </div><!--sub_group-->
+            </li><!--sub_sneakers-->
+        </ul><!--sub_lnb_box-->
+
+        <ul class="detail_brand">
+            <li><img src="img/brand01.jpg"></li>
+            <li>110년의 역사를 자랑하며  지금까지도 많은 이들에게 보편적으로 사랑 받고 있는 스테디셀러 컨버스입니다. &nbsp; &nbsp;
+            과거의 기능 그리고 디자인에 안주하지 않고 현재까지도 많은 개선을 통해 발전하는 중에 있습니다. </li>
+        </ul><!--detail_brand-->
+
+        <section class="detail_main">
+            <ul class="detail_left">
+                <input type="radio" name="detail_img" id="img01">
+                <input type="radio" name="detail_img" id="img02" checked>
+                <input type="radio" name="detail_img" id="img03">
+                <input type="radio" name="detail_img" id="img04">
+                <li class="detail_img_box">
+                    <div class="img01">
+                        <img src="img/detail01.jpg">
+                    </div>
+                    <div class="img02">
+                        <img src="img/detail02.jpg">
+                    </div>
+                    <div class="img03">
+                        <img src="img/detail03.jpg">
+                    </div>
+                    <div class="img04">
+                        <img src="img/detail04.jpg">
+                    </div>
+                </li><!--detail_img_box-->
+                <li class="detail_img_sub_box">
+                    <div>
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <label for="img01"
+                           class="detail_img_sub img1-1">
+                        <img src="img/detail01-1.jpg">
+                        <div></div>
+                    </label>
+                    <label for="img02"
+                           class="detail_img_sub img2-1">
+                        <img src="img/detail02-1.jpg">
+                        <div></div>
+                    </label>
+                    <label for="img03"
+                           class="detail_img_sub img3-1">
+                        <img src="img/detail03-1.jpg">
+                        <div></div>
+                    </label>
+                    <label for="img04"
+                    class="detail_img_sub img4-1">
+                        <img src="img/detail04-1.jpg">
+                        <div></div>
+                    </label>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </li>
+            </ul><!--detail_left-->
+            <ul class="detail_right">
+                <div>컨버스 70's 하이</div>
+                <div>모델번호 : CWF-2012904 &nbsp; 색상 : WOLF GREY</div>
+                <li>
+                    <p class="grey">가격</p>
+                    <p>
+                        96,000<span style="font-size: 14px;">원</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="grey">포인트</p>
+                    <p>
+                        960 <span style="font-size: 12px;">포인트 적립</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="grey">배송비</p>
+                    <p> 
+                        무료 &nbsp;&nbsp;&nbsp;<span style="font-size: 12px;">배송정책</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="grey">사이즈</p>
+                    <div>
+                        <select>
+                            <option>210</option>
+                            <option>215</option>
+                            <option>220</option>
+                            <option>225</option>
+                            <option>230</option>
+                            <option>235</option>
+                            <option>240</option>
+                            <option>245</option>
+                            <option>250</option>
+                            <option>255</option>
+                            <option>260</option>
+                            <option>265</option>
+                            <option>270</option>
+                            <option>275</option>
+                            <option>280</option>
+                            <option>285</option>
+                            <option>290</option>
+                        </select>
+                    </div>
+                    <p>입고신청</p>
+                </li>
+                <li>
+                    <p class="grey">수량</p>
+                    <div>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <p>개</p>
+                </li>
+                <li>
+                    <p class="grey">합계</p>
+                    <p>
+                        96,000<span style="font-size: 14px;">원</span>
+                    </p>
+                </li>
+                <li class="detail_pay">
+                    <div class="pay">
+                        결 제 하 기
+                    </div>
+                    <div class="cart">
+                        장바구니
+                    </div>
+                    <div class="wish">
+                        찜하기
+                    </div>
+                </li>
+            </ul><!--detail_right-->
+        </section><!--detail_main-->
+
+        <section class="info">
+            <section class="product_detail_box">
+                
+                <ul class="info_btn" id="product">
+                    <li><a href="#product">상세페이지</a></li>
+                    <li><a href="#review">상품후기(5건)</a></li>
+                    <li><a href="#delivery">배송/교환/AS</a></li>
+                    <li><a href="#qna">QnA</a></li>
+                </ul><!--info_btn-->
+                
+                <ul class="product_detail">
+                    <li class="product_brand">
+                        <img src="img/brand01.jpg">
+                    </li>
+                    <li class="product_txt_box">
+                        <ul class="txt01">
+                            <li class="txt01-1">
+                                <div>제품코드</div>
+                                <div>12394950</div>
+                            </li>
+                            <li class="txt01-2"></li>
+                        </ul>
+                        <ul class="txt02">
+                            <li class="txt02-1">
+                                <div>제조국</div>
+                                <div>베트남</div>
+                            </li>
+                            <li class="txt02-2">
+                                <div>색상명</div>
+                                <div>WOLF GREY</div>
+                            </li>
+                        </ul>
+                        <ul class="txt03">
+                            <li class="txt03-1">
+                                <div>소재</div>
+                                <div>폴리에스</div>
+                            </li>
+                            <li class="txt03-2">
+                                <div>수입자</div>
+                                <div>컨버스코리아</div>
+                            </li>
+                        </ul>
+                        <ul class="txt04">
+                            <li>사이즈</li>
+                            <li>210 / 215 /220 / 225 / 230 / 235 / 240 / 245 / 250 / 255 / 260 / 265 / 270 / 275 / 280 / 285 /290 </li>
+                        </ul>
+                        <ul class="txt05">
+                            <li>품질인증고지</li>
+                            <li>본 제품은 정부 고시 소비자분쟁해결 기준에 의거하여 보상해드립니다. (품질보증기간 : 구입일로부터 6개월 이내)</li>
+                        </ul>
+                    </li><!--product_txt_box-->
+                    <li class="product_img">
+                        <div>
+                            <img src="img/detail05.jpg">
+                            <img src="img/detail06.jpg">
+                        </div>
+                        <div>
+                            <img src="img/detail07.jpg">
+                        </div>
+                        <div>
+                            <img src="img/detail08.jpg">
+                        </div>
+                        <div>
+                            <img src="img/detail09.jpg">
+                        </div>
+                        <div>
+                            <img src="img/detail10.jpg">
+                        </div>
+                    </li><!--product_img-->
+                </ul><!--product_detail-->
+            </section><!--product_detail_box-->
+            
+            <section class="review_detail_box">
+
+                <ul class="info_btn" id="review">
+                    <li><a href="#product">상세페이지</a></li>
+                    <li><a href="#review">상품후기(5건)</a></li>
+                    <li><a href="#delivery">배송/교환/AS</a></li>
+                    <li><a href="#qna">QnA</a></li>
+                </ul><!--info_btn-->
+
+                <ul class="review_box">
+                    <li>REVIEW</li>
+                    <li><textarea placeholder="리뷰를 남겨주세요" rows="10" cols="134"></textarea></li>
+                    <li> 
+                        <div>사진첨부</div>
+                        <div> 아주만족 &nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <div>등록하기</div>
+                    </li>
+                </ul><!--review_box-->
+
+                <ul class="score_box">
+                    <li class="score_left">
+                        <div>
+                            4.5<span style="font-size: 12px;">점</span>
+                        </div>
+                        <div>
+                            <span style="color: tomato;">3개</span>의 리뷰
+                        </div> 
+                    </li><!--score_left-->
+                    <li class="score_center">
+                        <div><p></p></div>
+                        <div><p></p></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </li><!--score_center-->
+                    <li class="score_right">
+                        <div>
+                            <img src="img/review01.jpg">
+                            <p></p>
+                        </div>
+                        <div>
+                            <img src="img/review02.jpg">
+                            <p></p>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </li><!--score_right-->
+                </ul><!--score_box-->
+
+                <ul class="reply">
+                    <input type="radio" name="reply" id="re01" checked>
+                    <input type="radio" name="reply" id="re02">
+                    <li class="reply_choice">
+                        <label for="re01">최신순</label> 
+                        ㅣ 
+                        <label for="re02">별점순</label>
+                    </li>
+                    <li class="reply_box">
+                        <img src="img/ditail01 232 x 232.jpg">
+                        <ul class="comment">
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                사이즈 : 270 ㅣ 색상 : grey
+                            </li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
+                        </ul>
+                        <p>김** ㅣ 2021-03-05 21:00</p>
+                    </li><!--reply_box-->
+                    <li class="reply_box">
+                        <img src="img/ditail01 232 x 232.jpg">
+                        <ul class="comment">
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                사이즈 : 270 ㅣ 색상 : grey
+                            </li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
+                        </ul>
+                        <p>김** ㅣ 2021-03-05 21:00</p>
+                    </li><!--reply_box-->
+                    <li class="reply_box">
+                        <img src="img/ditail01 232 x 232.jpg">
+                        <ul class="comment">
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                사이즈 : 270 ㅣ 색상 : grey
+                            </li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
+                        </ul>
+                        <p>김** ㅣ 2021-03-05 21:00</p>
+                    </li><!--reply_box-->
+                    <input type="radio" name="reply_list" 
+                     id="re_li01" checked>
+                    <input type="radio" name="reply_list" 
+                     id="re_li02">
+                    <input type="radio" name="reply_list" 
+                     id="re_li03">
+                    <li class="reply_list">
+                        <i class="fas fa-chevron-left"></i>
+                        <label for="re_li01">1</label>
+                        <label for="re_li02">2</label>
+                        <label for="re_li03">3</label>
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </ul><!--reply-->
+            </section><!--review_detail_box-->
+
+            <section class="delivery_detail_box">
+                
+                <ul class="info_btn" id="delivery">
+                    <li><a href="#product">상세페이지</a></li>
+                    <li><a href="#review">상품후기(5건)</a></li>
+                    <li><a href="#delivery">배송/교환/AS</a></li>
+                    <li><a href="#qna">QnA</a></li>
+                </ul><!--info_btn-->
+
+                <ul class="delivery">
+                    <li class="delivery01">
+                        <div>제품배송안내</div>
+                        <ul>
+                            <li>배송비</li>
+                            <li> &nbsp;&nbsp;2만원 미만 구매 시 2000원</li>
+                            <li>&nbsp;&nbsp;2만원 이상구매 시 전액 무료(제주도 및 기타 도선료 추가 지역 포함)</li>
+                            <li>평균 배송일</li>
+                            <li> &nbsp;&nbsp;평일 4시 이전 주문 당일 출고됩니다(온라인 발송에 한함)</li>
+                            <li> &nbsp;&nbsp;결제 완료 후 평균 2일 소요됩니다. (주말 및 공휴일 제외)</li>
+                            <li> &nbsp;&nbsp;택배사의 사정에 따라 다소 지연될 수 있&nbsp;습니다 (대한통운 1588-1255)</li>
+                            <li> &nbsp;&nbsp;오프라인 매장 발송은 2~3일 더 소요될 수 있습니다</li>
+                        </ul>
+                    </li><!--delivery01-->
+                    <li class="delivery02">
+                        <div>취소,환불안내</div>
+                        <ul>
+                            <li>&nbsp;&nbsp;교환은 사이즈 교환만 가능합니다.</li>
+                            <li>&nbsp;&nbsp;매장에 방문하여 접수하시면 택배비 무료입니다.</li>
+                            <li>&nbsp;&nbsp;(단, 구매 시 선결제하신 배송비는 환불되지 않습니다.)</li>
+                            <li>&nbsp;&nbsp;매장에 방문하여 접수하실 경우 구매내역서를 지참하여 주시기 바랍니다.</li>
+                            <li>&nbsp;&nbsp;매장에서 반품 접수를 하신 경우 환불은 온라인 담당자 확인 후 처리됩니다.</li>
+                            <li>&nbsp;&nbsp;(확인 기간 2~3일 소요/결제하신 결제수단으로 환불)</li>
+                            <li>&nbsp;&nbsp;매장에 방문하여 반품/교환 접수 시 반품 기준 10개 미만 상품만 접수 가능합니다.</li>
+                            <li>&nbsp;&nbsp;(대형 반품/교환은 온라인 사이트를 통해서 접수해주시기 바랍니다.</li>
+                            <li>&nbsp;&nbsp;단순 변심일 경우 택배비 고객부담.)</li>
+                            <li>&nbsp;&nbsp;상품하자 이외의 사이즈, 색상교환 등 단순 변심에 의한 교환/환불 택배비 고객부담으로 왕복택배비가 발생합니다.</li>
+                            <li>&nbsp;&nbsp;(전자상거래 등에서의 소비자보호에 관한 법률 제17조(청약 철회등)9항에 의거 소비자의 사정에 의한 청약 철회</li>
+                            <li>&nbsp;&nbsp;시 택배비는 소비자 부담입니다.) </li>
+                            <li>&nbsp;&nbsp;제품을 받으신 날부터 7일 이내(상품불량인 경우 30일)에 접수해주시기 바랍니다.</li>
+                            <li>&nbsp;&nbsp;접수 시 왕복 택배비가 부과됩니다. (단, 상품 불량, 오배송의 경우 택배비를 환불해드립니다.)</li>
+                            <li> &nbsp;&nbsp;접수 후 14일 이내에 상품이 반품지로 도착하지 않을 경우 접수가 취소됩니다.(배송 지연 제외)</li>
+                            <li>교환/반품(환불)이 불가능한 경우</li>
+                            <li> &nbsp;&nbsp;신발/의류를 외부에서 착용한 경우</li>
+                            <li>&nbsp;&nbsp;제품을 사용 또는 훼손한 경우, 사은품 누락, 상품 TAG, 보증서, 상품 부자재가 제거 혹은 분실된 경우</li>
+                            <li>&nbsp;&nbsp;밀봉포장을 개봉했거나 내부 포장재를 훼손 또는 분실한 경우(단, 제품확인을 위한 개봉 제외)</li>
+                            <li>&nbsp;&nbsp;브랜드 박스 분실/훼손된 경우</li>
+                            <li>&nbsp;&nbsp;고객 부주의로 상품이 훼손, 변경된 경우</li>
+                        </ul>
+                    </li><!--delivery02-->
+                    <li class="delivery03">
+                        <div>&nbsp;&nbsp;AS 안내</div>
+                        <ul>
+                            <li>&nbsp;&nbsp;오프라인 매장에서도 A/S 접수 가능합니다. (매장 방문 접수 시 택배비 무료, </li>
+                            <li>&nbsp;&nbsp;입점 업체 상품 제외 슈크림 온라인 물류센터, 매장 상품에 한함)</li>
+                            <li> &nbsp;&nbsp;외부 착화 후 발견된 상품 이상에 대한 심의/수선 요청은 ‘마이페이지 > 쇼핑내역 > AS 신청’ </li>
+                            <li>&nbsp;&nbsp;또는 고객센터를 통해 접수해주시기 바랍니다.</li>
+                            <li>&nbsp;&nbsp;접수 없이 상품을 슈크림로 보내실 경우 확인이 어려워 반송되거나 처리가 늦어질 수 있습니다.</li>
+                            <li>&nbsp;&nbsp; 접수 완료 후 15일 이내 상품 도착하지 않을 경우 접수가 취소됩니다.</li>
+                            <li>&nbsp;&nbsp;매장에서 구매하신 상품의 처리절차를 ‘마이페이지 > 쇼핑내역 > AS 신청’ 에서 확인 할 수 있습니다. </li>
+                            <li>&nbsp;&nbsp;(멤버십 회원에 한함)</li>
+                            <li>AS 불가 항목</li>
+                            <li>&nbsp;&nbsp;개인의 착화 습관으로 발생된 힐컵 변형은 A/S 심의 불가합니다.</li>
+                            <li>&nbsp;&nbsp;신발 세탁으로 생긴 이염은 A/S 심의, 수선 불가합니다.</li>
+                            <li>&nbsp;&nbsp;양말 소재로 생긴 힐컵 주변 보풀 현상은 A/S 심의 불가합니다.</li>
+                            <li>&nbsp;&nbsp;에어 손상의 경우 A/S 심의, 수선 불가합니다.</li>
+                            <li>&nbsp;&nbsp;착화 후 생긴 가죽 소재의 스크래치 경우 가죽의 특성상 발생하는 자연현상으로 A/S 심의, 수선 불가합니다.</li>
+                            <li>&nbsp;&nbsp; 샌들 아웃솔(밑창) 교체 및 풋베드 크리닝 가능합니다.</li>
+                            <li>&nbsp;&nbsp;샌들 부품(밴드, 벨크로, 장식) 일부 수선 가능합니다. 스트랩이 외력에 의해 끊어질 경우 A/S 심의 불가 합니다.</li>
+                            <li>&nbsp;&nbsp;상품에 따라 아웃솔 전체 / 보조굽 교체 가능합니다.</li>
+                            <li>&nbsp;&nbsp;수선 AS</li>
+                            <li> &nbsp;&nbsp;수선을 원하는 내용을 자세하게(사진 첨부 가능) 기재해주시면 처리 시 도움이 될 수 있습니다.</li>
+                            <li>&nbsp;&nbsp;수선 접수 시 왕복 택배비(5000원)가 부과됩니다.</li>
+                            <li>&nbsp;&nbsp;지정택배(대한통운) 외 타택배 이용 시 추가로 발생되는 금액은 고객님께서 부담해주셔야 합니다.</li>
+                        </ul>
+                    </li><!--delivery03-->
+                </ul><!--delivery-->
+            </section><!--delivery_detail_box-->
+
+            <section class="qna_detail_box">
+                
+                <ul class="info_btn" id="qna">
+                    <li><a href="#product">상세페이지</a></li>
+                    <li><a href="#review">상품후기(5건)</a></li>
+                    <li><a href="#delivery">배송/교환/AS</a></li>
+                    <li><a href="#qna">QnA</a></li>
+                </ul><!--info_btn-->
+
+                <ul class="qna">
+                    <li>단순 상품비방, 상업적인 내용, 미풍양속 위반, 게시판의 성격에 맞지 않는 글은 통보 없이 삭제될 수 있습니다.</li>
+                    <li>오프라인 매장 재고현황 문의는 ‘전국오프라인매장’ 정보를 참고하시어 해당 매장으로 문의하시면 좀 더 정확한 확인이 가능합니다.</li>
+                    <li>주문/배송/반품 및 AS 등 기타 문의는 1:1 상담문의(마이페이지>쇼핑수첩>나의상담)에 남겨주시기 바랍니다.</li>
+                    <li>(상품 자체에 대한 문의가 아닌 주문/배송/반품 및 AS 등의 기타문의를 작성하실 경우 나의상담 메뉴로 글이 이동될 수 있습니다.)</li>
+                    <li class="qna_box">
+                        <div>
+                            <p>[서비스 문의]</p>
+                            <p>사이즈 문의드립니다.</p>
+                            <p>작성자 김**</p>
+                            <p>2021-03-05</p>
+                            <p>답변완료</p>
+                        </div>
+                        <div>
+                            <p>[서비스 문의]</p>
+                            <p>사이즈 문의드립니다.</p>
+                            <p>작성자 김**</p>
+                            <p>2021-03-05</p>
+                            <p>답변완료</p>
+                        </div>
+                        <div>
+                            <p>[서비스 문의]</p>
+                            <p>사이즈 문의드립니다.</p>
+                            <p>작성자 김**</p>
+                            <p>2021-03-05</p>
+                            <p>답변완료</p>
+                        </div>
+                        <div>
+                            <p>[서비스 문의]</p>
+                            <p>사이즈 문의드립니다.</p>
+                            <p>작성자 김**</p>
+                            <p>2021-03-05</p>
+                            <p>답변완료</p>
+                        </div>
+                        <div>
+                            <p>[서비스 문의]</p>
+                            <p>사이즈 문의드립니다.</p>
+                            <p>작성자 김**</p>
+                            <p>2021-03-05</p>
+                            <p>답변완료</p>
+                        </div>
+                    </li><!--qna_box-->
+                    <input type="radio" name="qna_li" id="qn01" checked>
+                    <input type="radio" name="qna_li" id="qn02">
+                    <input type="radio" name="qna_li" id="qn03">
+                    <li class="qna_list">
+                        <i class="fas fa-chevron-left"></i>
+                        <label for="qn01">1</label>
+                        <label for="qn02">2</label>
+                        <label for="qn03">3</label>
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                    <li class="qna_choice">
+                        문의하기
+                    </li>
+                </ul><!--qna-->
+
+            </section>
+
+        </section><!--info-->
+
+    </section><!--wrap-->
+
+
+    <section class="notice_ex">
+        <section class="notice">
+            <p>통합고객센터</p>
+            <p>080-335-0020</p>
+            <p>월-금 09:00~12:00 / 13:00~18:00
+                (주말, 공휴일 휴무)</p>
+            <p>NOTICE</p>
+            <p><img src="img/notice01.gif"></p>
+            <p> + </p>
+        </section>
+    </section>
+    
+    <footer class="footer">
+        <ul class="footer_left">
+            <li>
+                <a href="../index.html">
+                    <img src="img/logo_04.jpg">
+                </a>
+            </li>
+            <li>(주) 슈크림컴퍼니 대표 송준혁</li>
+            <li>주소 : 부산광역시 수영구 망미동 119-98 ㅣ 사업자등록번호 : 112-23-345345-2</li>
+            <li>대표전화 : 070-248-5478 ㅣ 통신판매업신고 : 통신판매업신고 광안리 제 2090-3446523</li>
+            <li>이메일 : hellojun98@naver.com ㅣ 인스타그램 : j.unyuk ㅣ 정보보호불책임자 : 삼강오륜</li>
+        </ul><!--left-->
+        <ul class="footer_right">
+            <li>HELP
+                <p>고객센터</p>
+                <p>배송교환</p>
+                <p>매장안내</p>
+            </li>
+            <li>EVENT
+                <p>쿠폰안내</p>
+                <p>기프트카드 발급</p>
+                <p>POINT GIUDE</p>
+            </li>
+            <li class="social">
+                <div>SOCIAL</div>
+                <a href="https://www.instagram.com/j.unyuk/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.instagram.com/j.unyuk/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/j.unyuk/" target="_blank">
+                    <i class="fab fa-blogger-b"></i>
+                </a>
+            </li>
+        </ul><!--right-->
+    </footer>
+    
+    <div class="copy">
+        copyright 2021. (주)슈크림컴퍼니 ALL RIGHTS RESERVED
+    </div>
+    
+    <aside class="wing_banner">
+        <input type="radio" name="wing" id="wing01" checked>
+        <input type="radio" name="wing" id="wing02">
+        <ul class="wing_box">
+            <li class="wing_txt">
+                <p>최근 본 상품</p>
+                <label for="wing01"> X </label>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small01.jpg"></div>
+                <p>덩크 로우 SP 시라큐스</p>
+                <p>나이키</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   219,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small03.jpg"></div>
+                <p>카시나 덩크</p>
+                <p>나이키</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   219,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small02.jpg"></div>
+                <p>척 70's 하이</p>
+                <p>컨버스</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   99,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+            <li class="wing_list">
+                <div><img src="img/small04.jpg"></div>
+                <p>척 70's 하이</p>
+                <p>컨버스</p>
+                <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                   99,000 <span style="font-size: 10px;">원
+                </p>
+            </li>
+        </ul>
+        <label for="wing02" class="wing_img"></label>
+        <a href="#" class="top_btn">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </aside>
+    
+</body>
+</html>
